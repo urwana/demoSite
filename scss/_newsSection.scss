@@ -1,0 +1,39 @@
+.newsSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 15rem;
+
+  @include sp {
+    display: block;
+    width: 94.6%;
+    margin: 6rem auto 0 auto;
+  }
+}
+
+.newsSection__head {
+  flex-basis: 30rem;
+}
+
+.newsSection__title {
+  @include topSectiontitle-h2;
+}
+
+.newsSection__linkContainer {
+  margin-top: 5rem;
+}
+
+.newsSection__body {
+  padding-left: 12%;
+  border-left: #e2e2e2 solid 1px;
+  flex: 1;
+
+  @include sp {
+    padding-left: 3rem;
+    border-left: none;
+  }
+}
+
+.newsSection__readMore {
+  text-align: right;
+}

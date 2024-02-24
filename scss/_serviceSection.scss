@@ -1,0 +1,24 @@
+.serviceSection {
+  margin-top: 12rem;
+  padding-bottom: 5.4rem;
+}
+
+.serviceSection__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+
+  @include sp {
+    display: block;
+  }
+}
+
+.serviceSection__title {
+  @include topSectiontitle-h2;
+  text-align: right;
+
+  @include sp {
+    text-align: left;
+  }
+}

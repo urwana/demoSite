@@ -1,0 +1,353 @@
+@import "mixin";
+@import "common";
+@import "header";
+@import "hamburgerButton";
+@import "hamburgerMenu";
+@import "mainView";
+@import "breadCrumb";
+@import "footer";
+
+.asterisk {
+  color: #e20000;
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.contact {
+  @include sp {
+    width: 89%;
+    margin: auto;
+  }
+}
+
+.contact__lead {
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+
+  @include sp {
+    font-size: 1.4rem;
+  }
+}
+
+.contactForm {
+  margin: 7rem auto 12rem;
+  width: 64rem;
+
+  @include sp {
+    margin: 8rem auto 8rem;
+    width: 100%;
+  }
+}
+
+.contactTable {
+  margin-top: 9rem;
+
+  @include sp {
+    margin-top: 1.5rem;
+  }
+}
+
+.contactTable tr,
+.contactTable th,
+.contactTable td {
+  display: inline-block;
+}
+
+.contactTable th,
+.contactTable td {
+  font-size: 1.5rem;
+  font-weight: normal;
+  display: block;
+}
+
+.contactTable tr {
+  margin-bottom: 4rem;
+
+  @include sp {
+    display: block;
+    margin-bottom: 2.8rem;
+  }
+}
+
+.contactTable th {
+  margin-bottom: 1.2rem;
+}
+
+%formBase {
+  border: #e2e2e2 1px solid;
+  width: 64rem;
+  border-radius: 0.4rem;
+  padding-left: 1rem;
+
+  @include sp {
+    width: 100%;
+  }
+}
+
+.contactTable label {
+  margin-right: 2rem;
+}
+
+.contactTable input {
+  @extend %formBase;
+  height: 5rem;
+}
+
+.inputExplanation {
+  @include sp {
+    display: block;
+    margin-top: 1.6rem;
+  }
+}
+
+.contactTable select {
+  @extend %formBase;
+  height: 5rem;
+}
+
+.contactTable textarea {
+  @extend %formBase;
+  height: 16rem;
+}
+
+.contactTable .confirmCheckbox {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-left: 0.5rem;
+}
+
+.personalInformation {
+  font-size: 1.4rem;
+}
+
+.contactTable-confirm {
+  margin-top: 9.5rem;
+
+  @include sp {
+    margin-top: 3rem;
+  }
+}
+
+.contactTable-confirm tr {
+  display: block;
+}
+
+.contactTable-confirm th,
+.contactTable-confirm td {
+  font-weight: normal;
+  padding-bottom: 4.2rem;
+
+  @include sp {
+    display: block;
+  }
+}
+
+.contactTable-confirm th {
+  font-size: 1.5rem;
+
+  @include sp {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.contactTable-confirm td {
+  font-size: 1.4rem;
+
+  @include sp {
+    padding-bottom: 3rem;
+  }
+}
+
+.contactTable-confirm tr:last-child {
+  td,
+  tr {
+    padding-bottom: 0;
+  }
+}
+
+.textArea-confirm {
+  line-height: 3rem;
+}
+
+.contactTable-confirm th {
+  width: 19rem;
+}
+
+.contact__thankEn {
+  font-family: "Oswald";
+  font-size: 4rem;
+  font-weight: bold;
+
+  @include sp {
+    font-size: 2.4rem;
+  }
+}
+
+.contact__thankJp {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+
+  @include sp {
+    font-size: 1.4rem;
+  }
+}
+
+.contact__explanation {
+  margin-top: 3.6rem;
+  font-size: 1.8rem;
+  line-height: 3.8rem;
+
+  @include sp {
+    margin-top: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+  }
+}
+
+// button
+.contactLists {
+  margin: 4.4rem 0;
+  font-size: 1.4rem;
+  line-height: 4rem;
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.contact__buttonContainer {
+  margin-top: 3.6rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%contact__button {
+  display: block;
+  font-size: 1.8rem;
+  background-color: #ffffff;
+  border: #001e63 solid 1px;
+  color: #001e63;
+  border-radius: 4px;
+  transition: background-position 0.3s ease;
+  padding: 2rem 0;
+
+  @include sp {
+    padding: 1.3rem 0;
+    font-size: 1.4rem;
+  }
+}
+
+%contact__button-dark {
+  display: inline-block;
+  background-color: #001e63;
+  border: #001e63 solid 1px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  border-radius: 4px;
+  transition: background-position 0.3s ease;
+
+  @include sp {
+    font-size: 1.4rem;
+  }
+}
+
+%contact__buttonArrow-before {
+  background-image: url("../img/arrow-before.svg");
+  background-repeat: no-repeat;
+  background-size: 0.6rem;
+}
+
+%contact__buttonArrow-before-white {
+  background-image: url("../img/arrow-before-white.svg");
+  background-repeat: no-repeat;
+  background-size: 0.6rem;
+}
+
+%contact__buttonArrow-next-white {
+  background-image: url("../img/arrow-next-white.svg");
+  background-repeat: no-repeat;
+  background-size: 0.6rem;
+}
+
+.contact__toConfirm {
+  @extend %contact__button-dark;
+  @extend %contact__buttonArrow-next-white;
+  padding: 2rem 20rem 2rem 17rem;
+  background-position: right 18rem center;
+
+  &:hover {
+    background-position: right 10rem center;
+  }
+
+  @include sp {
+    padding: 1.3rem 11rem 1.3rem 9rem;
+    background-position: right 9rem center;
+
+    &:hover {
+      background-position: right 8.5rem center;
+    }
+  }
+}
+
+.contact__toInput {
+  @extend %contact__button;
+  @extend %contact__buttonArrow-before;
+  padding: 2rem 11rem 2rem 13rem;
+  background-position: left 11rem center;
+
+  &:hover {
+    background-position: left 10.5rem center;
+  }
+
+  @include sp {
+    padding: 1.3rem 5rem 1.3rem 7rem;
+    background-position: left 5rem center;
+
+    &:hover {
+      background-position: left 4.5rem center;
+    }
+  }
+}
+
+.contact__send {
+  @extend %contact__button-dark;
+  @extend %contact__buttonArrow-next-white;
+  padding: 2rem 11rem 2rem 9.5rem;
+  margin-left: 8rem;
+  background-position: right 9.5rem center;
+
+  &:hover {
+    background-position: right 9rem center;
+  }
+
+  @include sp {
+    padding: 1.3rem 5rem 1.3rem 4rem;
+    margin-left: 2.3rem;
+    background-position: right 3rem center;
+
+    &:hover {
+      background-position: right 2rem center;
+    }
+  }
+}
+
+.contact__toTop {
+  @extend %contact__button-dark;
+  @extend %contact__buttonArrow-before-white;
+  padding: 2rem 17.4rem 2rem 19.5rem;
+  background-position: left 17rem center;
+
+  &:hover {
+    background-position: left 16.5rem center;
+  }
+
+  @include sp {
+    padding: 1.3rem 9rem 1.3rem 11rem;
+    background-position: left 9rem center;
+
+    &:hover {
+      background-position: left 8.5rem center;
+    }
+  }
+}

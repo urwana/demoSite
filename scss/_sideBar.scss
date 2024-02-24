@@ -1,0 +1,29 @@
+.sideBar {
+  width: 30rem;
+
+  @include sp {
+    width: 100%;
+  }
+}
+
+.title-sideBar {
+  @include title-sideBar;
+}
+
+.sideBarLists {
+  padding: 0 1.8rem 4rem 1.8rem;
+}
+
+.sideBarLists > li {
+  font-size: 1.4rem;
+  padding: 2rem;
+  border-bottom: #e4e4e4 solid 1px;
+}
+
+.sideBarLists > li:last-child {
+  border-bottom: transparent;
+}
+
+.photoLists {
+  padding: 0 1.8rem;
+}

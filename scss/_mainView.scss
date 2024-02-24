@@ -1,0 +1,87 @@
+.mainView-about {
+  @include mainView;
+  background-image: url("../images/mainView/about.jpg");
+
+  @include sp {
+    background-image: url("../images/mainView/about-sp.jpg");
+  }
+}
+
+.mainView-service {
+  @include mainView;
+  background-image: url("../images/mainView/service.jpg");
+
+  @include sp {
+    background-image: url("../images/mainView/service-sp.jpg");
+  }
+}
+
+.mainView-news {
+  @include mainView;
+  background-image: url("../images/mainView/news.jpg");
+
+  @include sp {
+    background-image: url("../images/mainView/news-sp.jpg");
+  }
+}
+
+.mainView-works {
+  @include mainView;
+  background-image: url("../images/mainView/works.jpg");
+
+  @include sp {
+    background-image: url("../images/mainView/works-sp.jpg");
+  }
+}
+
+.mainView-contact {
+  @include mainView;
+  background-image: url("../images/mainView/contact.jpg");
+
+  @include sp {
+    background-image: url("../images/mainView/contact-sp.jpg");
+    background-size: 100%;
+    background-position: left 1rem top;
+  }
+}
+
+.mainView__titleContainer {
+  display: inline-block;
+  padding: 2rem 4.5rem 5rem 4.5rem;
+  min-width: 50rem;
+  background-color: #ffffff;
+
+  @include sp {
+    padding: 2rem 3rem 4rem 3rem;
+    min-width: 19rem;
+  }
+}
+
+.mainView__title {
+  font-family: "Oswald";
+  font-size: 10rem;
+  font-weight: bold;
+
+  @include sp {
+    font-size: 4.4rem;
+  }
+}
+
+.mainView__subtitle {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+
+  @include sp {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+.breadCrumbsContainer-mainView {
+  padding-right: 6rem;
+
+  @include sp {
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,40 @@
+.pager {
+  margin-top: 6rem;
+}
+
+// ページネーションの要素を横並びにする
+.nav-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+// 前へ、次へリンクのスタイル
+.pagination__arrow {
+  display: inline-block;
+  width: 11px;
+  height: 18px;
+}
+
+// それぞれのページ番号のスタイル
+.page-numbers {
+  font-family: "Oswald";
+  font-size: 1.4rem;
+  padding: 1.2rem 1.7rem;
+  background-color: #e9eeef;
+  display: inline-block;
+}
+
+// 現在のページ番号のCSS（色を反転させている）
+.page-numbers.current {
+  background-color: #001e63;
+  color: #ffffff;
+}
+
+// ボーダーラインを打ち消す
+.page-numbers.dots,
+.page-numbers.prev,
+.page-numbers.next {
+  border: none;
+  background-color: transparent;
+}

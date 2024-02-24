@@ -1,0 +1,41 @@
+@import "mixin";
+@import "common";
+@import "header";
+@import "hamburgerButton";
+@import "hamburgerMenu";
+@import "mainView";
+@import "breadCrumb";
+@import "summarySection";
+@import "workslists";
+@import "linkTabs";
+@import "pager";
+@import "footer";
+
+.worksMainContents {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 110rem;
+  margin: 9.6rem auto 12rem;
+
+  @include sp {
+    display: block;
+    padding: 3.3rem 6.67% 8rem;
+  }
+}
+
+.worksMainContents__tabs {
+  flex-basis: 26rem;
+}
+
+.worksMainContents__body {
+  flex: 1;
+  padding-left: 6rem;
+  border-left: #e2e2e2 solid 1px;
+
+  @include sp {
+    padding: 0;
+    border-left: transparent;
+  }
+}

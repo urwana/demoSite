@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  @include sp {
+    justify-content: space-between;
+  }
+}
+
+%logoWrapper {
+  max-width: 25.8rem;
+  min-width: 11.5rem;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.header .logoWrapper {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  @extend %logoWrapper;
+  width: 17.9%;
+  cursor: pointer;
+
+  @include sp {
+    position: relative;
+  }
+}
+
+.navigation__lists {
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  > li {
+    margin-left: 4.9rem;
+    @include underlineAnimation(#000000, 1px, 0.3s);
+  }
+
+  a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation__lists {
+    > li {
+      margin-left: 3rem;
+    }
+
+    a {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@include sp {
+  .navigation__lists {
+    display: block;
+
+    > li {
+      margin-left: 0;
+    }
+
+    a {
+      color: #ffffff;
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-decoration: none;
+      display: block;
+      padding: 1.2rem 0;
+      border-top: #011950 solid 1px;
+    }
+  }
+}
+
+.nav__contact {
+  background-color: #011950;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding: 3rem 4rem;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  span {
+    margin-left: 1rem;
+  }
+}
+
+@include sp {
+  .nav__contact {
+    background-color: initial;
+    padding: 1.2rem 0;
+
+    a {
+      display: inline-block;
+      padding: 0;
+    }
+
+    span {
+      margin-left: 0;
+    }
+  }
+}
+
+.size-custom::before {
+  font-size: 2.5rem;
+}
+
+@include sp {
+  .imgWrapper > img {
+    width: 100%;
+  }
+}
+
+.navigation .snsIconContainer {
+  display: none;
+  position: absolute;
+  left: 13%;
+  top: 65vh;
+  z-index: 4;
+
+  > i {
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,67 @@
+// TODO 正規の消しかたを調査
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+.swiperContainer {
+  width: 71.8%;
+
+  @include sp {
+    width: 100%;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 78rem;
+
+  @include sp {
+    height: initial;
+  }
+}
+
+.topSlide {
+  padding-bottom: 75.43%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.topSlide-1 {
+  background-image: url("../img/topSwiper/1.png");
+}
+
+.topSlide-2 {
+  background-image: url("../img/topSwiper/2.png");
+}
+
+.topSlide-3 {
+  background-image: url("../img/topSwiper/3.png");
+}
+
+.topSlide-4 {
+  background-image: url("../img/topSwiper/4.png");
+}
+
+@include sp {
+  .topSlide {
+    padding-bottom: 135.2%;
+  }
+
+  .topSlide-1 {
+    background-image: url("../img/topSwiper/1-sp.png");
+  }
+
+  .topSlide-2 {
+    background-image: url("../img/topSwiper/2-sp.png");
+  }
+
+  .topSlide-3 {
+    background-image: url("../img/topSwiper/3-sp.png");
+  }
+
+  .topSlide-4 {
+    background-image: url("../img/topSwiper/4-sp.png");
+  }
+}

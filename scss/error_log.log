@@ -1,0 +1,127 @@
+02/10/24 1:59:59: style.scss - parse error: failed at `@use "./base/base";` /Users/suzukitomoo/Local Sites/excite-code/app/public/wp-content/themes/exciteCode/scss/style.scss on line 1, at column 0
+02/10/24 4:02:45: contact.scss - Undefined variable $black: _breadCrumb.scss on line 55, at column 3
+Call Stack:
+#0 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:02:45: about.scss - Undefined variable $black: _breadCrumb.scss on line 55, at column 3
+Call Stack:
+#0 import _breadCrumb.scss about.scss on line 7
+#1 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:02:45: worksDetail.scss - Undefined variable $black: _breadCrumb.scss on line 55, at column 3
+Call Stack:
+#0 import _breadCrumb.scss worksDetail.scss on line 6
+#1 import _breadCrumb.scss about.scss on line 7
+#2 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:02:45: news.scss - Undefined variable $black: _breadCrumb.scss on line 55, at column 3
+Call Stack:
+#0 import _breadCrumb.scss news.scss on line 7
+#1 import _breadCrumb.scss worksDetail.scss on line 6
+#2 import _breadCrumb.scss about.scss on line 7
+#3 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:02:45: service.scss - Undefined variable $black: _breadCrumb.scss on line 55, at column 3
+Call Stack:
+#0 import _breadCrumb.scss service.scss on line 7
+#1 import _breadCrumb.scss news.scss on line 7
+#2 import _breadCrumb.scss worksDetail.scss on line 6
+#3 import _breadCrumb.scss about.scss on line 7
+#4 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:02:45: works.scss - Undefined variable $black: _breadCrumb.scss on line 55, at column 3
+Call Stack:
+#0 import _breadCrumb.scss works.scss on line 7
+#1 import _breadCrumb.scss service.scss on line 7
+#2 import _breadCrumb.scss news.scss on line 7
+#3 import _breadCrumb.scss worksDetail.scss on line 6
+#4 import _breadCrumb.scss about.scss on line 7
+#5 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:02:45: newsDetail.scss - Undefined variable $black: _breadCrumb.scss on line 55, at column 3
+Call Stack:
+#0 import _breadCrumb.scss newsDetail.scss on line 6
+#1 import _breadCrumb.scss works.scss on line 7
+#2 import _breadCrumb.scss service.scss on line 7
+#3 import _breadCrumb.scss news.scss on line 7
+#4 import _breadCrumb.scss worksDetail.scss on line 6
+#5 import _breadCrumb.scss about.scss on line 7
+#6 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:03:46: contact.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:03:46: about.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss about.scss on line 7
+#1 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:03:46: worksDetail.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss worksDetail.scss on line 6
+#1 import _breadCrumb.scss about.scss on line 7
+#2 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:03:46: news.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss news.scss on line 7
+#1 import _breadCrumb.scss worksDetail.scss on line 6
+#2 import _breadCrumb.scss about.scss on line 7
+#3 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:03:46: service.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss service.scss on line 7
+#1 import _breadCrumb.scss news.scss on line 7
+#2 import _breadCrumb.scss worksDetail.scss on line 6
+#3 import _breadCrumb.scss about.scss on line 7
+#4 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:03:46: works.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss works.scss on line 7
+#1 import _breadCrumb.scss service.scss on line 7
+#2 import _breadCrumb.scss news.scss on line 7
+#3 import _breadCrumb.scss worksDetail.scss on line 6
+#4 import _breadCrumb.scss about.scss on line 7
+#5 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:03:46: newsDetail.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss newsDetail.scss on line 6
+#1 import _breadCrumb.scss works.scss on line 7
+#2 import _breadCrumb.scss service.scss on line 7
+#3 import _breadCrumb.scss news.scss on line 7
+#4 import _breadCrumb.scss worksDetail.scss on line 6
+#5 import _breadCrumb.scss about.scss on line 7
+#6 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:05:47: contact.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:05:47: about.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss about.scss on line 7
+#1 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:05:47: worksDetail.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss worksDetail.scss on line 6
+#1 import _breadCrumb.scss about.scss on line 7
+#2 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:05:47: news.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss news.scss on line 7
+#1 import _breadCrumb.scss worksDetail.scss on line 6
+#2 import _breadCrumb.scss about.scss on line 7
+#3 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:05:48: service.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss service.scss on line 7
+#1 import _breadCrumb.scss news.scss on line 7
+#2 import _breadCrumb.scss worksDetail.scss on line 6
+#3 import _breadCrumb.scss about.scss on line 7
+#4 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:05:48: works.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss works.scss on line 7
+#1 import _breadCrumb.scss service.scss on line 7
+#2 import _breadCrumb.scss news.scss on line 7
+#3 import _breadCrumb.scss worksDetail.scss on line 6
+#4 import _breadCrumb.scss about.scss on line 7
+#5 import _breadCrumb.scss contact.scss on line 7
+02/10/24 4:05:48: newsDetail.scss - Undefined variable $black: _breadCrumb.scss on line 11, at column 3
+Call Stack:
+#0 import _breadCrumb.scss newsDetail.scss on line 6
+#1 import _breadCrumb.scss works.scss on line 7
+#2 import _breadCrumb.scss service.scss on line 7
+#3 import _breadCrumb.scss news.scss on line 7
+#4 import _breadCrumb.scss worksDetail.scss on line 6
+#5 import _breadCrumb.scss about.scss on line 7
+#6 import _breadCrumb.scss contact.scss on line 7

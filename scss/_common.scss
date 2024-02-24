@@ -1,0 +1,66 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", "Oswald", sans-serif;
+}
+
+header,
+footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+}
+
+.contents-dark {
+  background-color: #f8f8f8;
+  padding-bottom: 16.5rem;
+}
+
+.contents__inner-dark {
+  padding-top: 12.6rem;
+  width: 110rem;
+  margin: auto;
+
+  @include sp {
+    width: 100%;
+    padding-top: 6rem;
+  }
+}
+
+.displayPc {
+  @media only screen and (min-width: 769px) {
+    display: block !important;
+  }
+
+  @include sp {
+    display: none !important;
+  }
+}
+
+.displaySp {
+  @media only screen and (min-width: 769px) {
+    display: none !important;
+  }
+
+  @include sp {
+    display: block !important;
+  }
+}
+
+.contents {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+
+  @include sp {
+    width: 94.6%;
+  }
+}

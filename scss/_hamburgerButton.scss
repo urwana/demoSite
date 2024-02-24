@@ -1,0 +1,56 @@
+@include sp {
+  .hamburgerButton {
+    position: relative;
+    cursor: pointer;
+    margin: 3rem 3rem 0 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 100;
+  }
+
+  .hamburgerButton span {
+    display: inline-block;
+    transition: all 0.4s;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    background: #242424;
+  }
+
+  .hamburgerButton span:nth-of-type(1) {
+    width: 100%;
+    top: 0;
+  }
+
+  .hamburgerButton span:nth-of-type(2) {
+    width: 100%;
+    top: 0.7rem;
+  }
+
+  .hamburgerButton span:nth-of-type(3) {
+    width: 60%;
+    top: 1.4rem;
+  }
+
+  .hamburgerButton.active span {
+    background: #ffffff;
+  }
+
+  .hamburgerButton.active span:nth-of-type(1) {
+    top: 1.8rem;
+    left: 0;
+    transform: translateY(6px) rotate(-45deg);
+    width: 100%;
+  }
+
+  .hamburgerButton.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .hamburgerButton.active span:nth-of-type(3) {
+    top: 3rem;
+    left: 0;
+    transform: translateY(-6px) rotate(45deg);
+    width: 100%;
+  }
+}
