@@ -26,10 +26,18 @@
 }
 
 .aboutSection__title {
-  font-family: "Oswald";
+  //font-family: "Oswald";
+  @include jp(700);
   font-size: 2rem;
   font-weight: bold;
   color: #000000;
+}
+
+.aboutSection__title > span{
+  @include en(500);
+  padding-left: 2rem;
+  font-size: 1.3rem;
+
 }
 
 .aboutSection__text {

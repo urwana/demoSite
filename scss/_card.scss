@@ -19,6 +19,7 @@
   line-height: 3.2rem;
   text-align: left;
   margin-bottom: 3rem;
+  @include ellipsisMulti(5,16rem);
 }
 
 .imgWrapper-card {

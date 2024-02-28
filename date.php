@@ -15,19 +15,19 @@ get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
         <?php $workLinkTabData = [
           [
             'actions' => "e",
-            'labels' => "すべての実績"
+            'labels' => "すべての事例"
           ],
           [
             'actions' => "f",
-            'labels' => "購入サポート"
+            'labels' => "個人の法務・不動産"
           ],
           [
             'actions' => "g",
-            'labels' => "修理・整備"
+            'labels' => "相続・事業承継"
           ],
           [
             'actions' => "h",
-            'labels' => "車検・点検"
+            'labels' => "企業顧問"
           ],
         ]
         ?>

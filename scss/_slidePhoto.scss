@@ -13,20 +13,8 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-
-  @include slideInWithPauseAnimation(
-    $from: 100%,
-    $to: -32%,
-    $keepPosision: -32%
-  );
-
-  @include sp {
-    @include slideInWithPauseAnimation(
-      $from: 100%,
-      $to: -188%,
-      $keepPosision: -188%
-    );
-  }
+  transform: translateX(100%);
+  opacity: 0;
 }
 
 .slidePhoto__list {

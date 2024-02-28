@@ -1,17 +1,14 @@
 <?php $base = ['path' => "./", 'title' => "お問い合わせ完了", 'css' => "contact", 'description' => "架空のコーポレートデモサイトのお問い合わせ完了ページです。"]; ?>
-<!DOCTYPE html>
-<html lang="ja">
-<?php get_template_part("./parts/common/head", $base); ?>
+<?php get_template_part('parts/common/header', null, array('base' => $base)); ?>
 
-<body>
+<main>
   <div class="wrapper">
-    <?php get_template_part('parts/common/header');
-    $mainViewData = [
+    <?php $mainViewData = [
       'pageNameEn' => "Contact",
       'pageNameJp' => "お問い合わせ",
       'pageNames' => ["contact"]
     ];
-    get_template_part('parts/common/mainView', $mainViewData); ?>
+    get_template_part('parts/common/mainView', null, array('mainViewData' => $mainViewData)); ?>
     <div class="contact">
       <div class="contact__inner">
         <div class="contactForm">
@@ -23,13 +20,11 @@
             今後ともご愛顧賜りますようよろしくお願い申し上げます。
           </div>
           <div class="contact__buttonContainer">
-            <a href="./top.html" class="contact__toTop">TOPへ戻る</a>
+            <a href="<?php echo home_url('/'); ?>" class="contact__toTop">TOPへ戻る</a>
           </div>
         </div>
       </div>
     </div>
     <?php get_template_part('parts/common/footerSimple'); ?>
   </div>
-</body>
-
-</html>
+</main>

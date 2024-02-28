@@ -20,25 +20,36 @@
       <a href="<?php echo home_url('/'); ?>">
         <picture>
           <source media="(max-width: 768px)" srcset="<?php echo esc_url(get_theme_file_uri("/images/logo-sp.png")); ?>"
-            class="js-spLogo">
+            class="js_spLogo">
           <img src="<?php echo esc_url(get_theme_file_uri("/images/logo.png")); ?>" alt="ロゴ ExciteCode">
         </picture>
       </a>
     </h1>
-    <nav class="js-navigation navigation">
-      <?php get_template_part("parts/common/hamburgerButton"); ?>
+    <?php get_template_part("parts/common/hamburgerButton"); ?>
+    <nav class="js_navigation navigation">
       <ul class="navigation__lists">
-        <li><a href="<?php echo home_url('/'); ?>">TOP</a></li>
-        <li><a href="<?php echo get_page_link(11); ?>">ABOUT</a></li>
-        <li><a href="<?php echo get_page_link(13); ?>">SERVICE</a></li>
-        <li><a href="<?php echo get_post_type_archive_link('works'); ?>">WORKS</a></li>
-        <li><a href="<?php echo get_page_link(16); ?>">NEWS</a></li>
-        <li class="nav__contact"><a href="/contact.html">
-            <a href="<?php echo get_page_link(2150); ?>">
-              <i class="fa-regular fa-envelope size-custom displayPc"></i><span>CONTACT</span></a></li>
+        <?php
+        $menu_name = 'global_nav';
+        $locations = get_nav_menu_locations();
+        $menu = wp_get_nav_menu_object($locations[$menu_name]);
+        $menu_items = wp_get_nav_menu_items($menu->term_id);
+        $current_page_id = get_the_ID(); // 現在のページや投稿のIDを取得
+        foreach ($menu_items as $item) : ?>
+        <?php if ($item->object_id == "2150") : ?>
+        <li class="nav__contact">
+          <a href="<?php echo get_page_link(2150); ?>">
+            <span><?php echo esc_html($item->title); ?></span>
+          </a>
+        </li>
+        <?php else : ?>
+        <li class="<?php echo ($item->object_id == get_queried_object_id()) ? 'currentMenuItem' : ''; ?>">
+          <a href="<?php echo esc_attr($item->url); ?> "><?php echo esc_html($item->title); ?></a>
+        </li>
+        <?php endif; ?>
+        <?php endforeach ?>
         <li class="displaySp"><a href="">プライバシーポリシー</a></li>
       </ul>
       <?php get_template_part("parts/common/snsIconContainer"); ?>
     </nav>
-    <div class="circleBackground displaySp"></div>
+    <div class="js_circleBackground circleBackground displaySp"></div>
   </header>

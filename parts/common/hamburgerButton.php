@@ -1,1 +1,1 @@
-<div class="hamburgerButton"><span></span><span></span><span></span></div>
+<div class="js_hamburgerButton hamburgerButton"><span></span><span></span><span></span></div>

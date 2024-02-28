@@ -1,9 +1,10 @@
 <section class="newsSection">
   <div class="newsSection__head">
-    <h2 class="newsSection__title">News</h2>
+    <h2 class="newsSection__title">ニュース<span>News</span></h2>
     <div class="newsSection__linkContainer">
       <?php
-      get_template_part('parts/common/linktabs') ?>
+      get_template_part('parts/common/linkTabs');
+      ?>
     </div>
   </div>
   <div class="newsSection__body">
@@ -19,7 +20,7 @@
     <?php if ($the_query->have_posts()) : ?>
       <ul class="news__items">
         <?php while ($the_query->have_posts()) : $the_query->the_post();
-          get_template_part('parts/common/newslists');
+          get_template_part('parts/common/newsLists');
         endwhile; ?>
         <?php wp_reset_postdata(); ?>
       </ul>

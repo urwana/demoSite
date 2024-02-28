@@ -1,4 +1,5 @@
 @import "mixin";
+@import "fonts";
 @import "common";
 @import "header";
 @import "hamburgerButton";
@@ -110,7 +111,7 @@
   height: 16rem;
 }
 
-.contactTable .confirmCheckbox {
+.contactTable .confirmCheckbox input {
   display: inline-block;
   width: 1.7rem;
   height: 1.7rem;
@@ -253,19 +254,19 @@
 }
 
 %contact__buttonArrow-before {
-  background-image: url("../img/arrow-before.svg");
+  background-image: url("../images/arrow-before.svg");
   background-repeat: no-repeat;
   background-size: 0.6rem;
 }
 
 %contact__buttonArrow-before-white {
-  background-image: url("../img/arrow-before-white.svg");
+  background-image: url("../images/arrow-before-white.svg");
   background-repeat: no-repeat;
   background-size: 0.6rem;
 }
 
 %contact__buttonArrow-next-white {
-  background-image: url("../img/arrow-next-white.svg");
+  background-image: url("../images/arrow-next-white.svg");
   background-repeat: no-repeat;
   background-size: 0.6rem;
 }
@@ -295,6 +296,7 @@
   @extend %contact__buttonArrow-before;
   padding: 2rem 11rem 2rem 13rem;
   background-position: left 11rem center;
+  margin-bottom: 2.4rem;
 
   &:hover {
     background-position: left 10.5rem center;

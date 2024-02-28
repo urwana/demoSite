@@ -5,8 +5,8 @@
   <div class="companyProfileSection__table">
     <table class="table-companyProfile">
       <tr>
-        <th>会社名</th>
-        <td>株式会社Excitecode</td>
+        <th>事務所めい</th>
+        <td>Aventadole 弁護士事務所</td>
       </tr>
       <tr>
         <th>所在地</th>
@@ -17,21 +17,21 @@
         <td>2015年12月10日</td>
       </tr>
       <tr>
-        <th>代表取締役</th>
-        <td>田中　太郎</td>
+        <th>代表弁護士</th>
+        <td>宇多川 一太郎</td>
       </tr>
       <tr class="cell-business">
         <th rowspan="4">事業内容</th>
-        <td>自動車販売（新車、中古車）古物No.第00000000号</td>
+        <td>法律相談（民事）渋谷高裁 記号No.第ト00000000号</td>
       </tr>
       <tr class="cell-business">
-        <td>自動車整備（国産車、輸入車）陸運局認証工場　認証No.0-0000</td>
+        <td>民事再生（法定団体）経済産業省　認可No.0-0000</td>
       </tr>
       <tr class="cell-business">
-        <td>輸入車販売（自動車、自動車関連部品）</td>
+        <td>東京東弁護士会（第四支部）</td>
       </tr>
       <tr class="cell-business">
-        <td>保険代理店（ABC損害保険株式会社、DFG損害保険株式会社）</td>
+        <td>提携司法書士（ABC司法書士事務所、DFG67789099）</td>
       </tr>
     </table>
   </div>

@@ -6,10 +6,6 @@
   </div>
 </div>
 <div class="breadCrumbsContainer-mainView">
-  <?php // $pageNames = $mainViewData['pageNames'];
-  // get_template_part('_breadCrumb', null, array('pageNames' => $pageNames)) 
-  ?>
-
   <?php if (function_exists('bcn_display')) { ?>
   <div class="breadcrumb breadCrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
     <?php bcn_display(); ?>

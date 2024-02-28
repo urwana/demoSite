@@ -133,7 +133,8 @@
 
 .footer .logoWrapper {
   @extend %logoWrapper;
-  width: 63.55%;
+  width: 40%;
+  aspect-ratio: 258 / 180;
 
   @include sp {
     width: 11.4rem;
@@ -197,26 +198,33 @@
 
 .footerNavigation {
   a {
+    @include jp(500);
     font-size: 1.6rem;
     @include underlineAnimation(#ffffff, 1px, 0.3s);
   }
 
   li:not(:first-child) {
-    margin-top: 2.3rem;
+    margin-left: 3rem;
   }
 
   @include sp {
     li:not(:first-child) {
+      margin-left: 0;
       margin-top: 2.8rem;
     }
   }
+}
+
+.footerNavigation__lists{
+  display: flex;
+  justify-content: flex-start;
 }
 
 @include sp {
   .footerNavigation {
     a {
       font-size: 1.4rem;
-      font-weight: 400;
+      @include jp(400);
     }
   }
 }

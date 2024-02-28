@@ -11,16 +11,14 @@ get_template_part('parts/common/header', null, array('base' => $baseNewsDetail))
             echo '<span class="newsDetail__label">' . esc_html($category->name) . '</span>';
           } ?>
           <div class="newsDetail__title"><?php the_title(); ?></div>
-          <time class="newsDetail__date"
-            datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y年n月j日'); ?>
+          <time class="newsDetail__date" datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y年n月j日'); ?>
           </time>
         </div>
         <div class="newsDetail__imgContainer">
           <?php if (has_post_thumbnail()) : ?>
-          <?php the_post_thumbnail('full', array('class' => 'detail__thumbnail')); ?>
+            <?php the_post_thumbnail('full', array('class' => 'detail__thumbnail')); ?>
           <?php else : ?>
-          <img class="detail__thumbnail" src="<?php echo esc_url(get_theme_file_uri("/images/noimage.jpg")); ?>"
-            alt="NoImage画像" />
+            <img class="detail__thumbnail" src="<?php echo esc_url(get_theme_file_uri("/images/articleNone.jpg")); ?>" alt="NoImage画像" />
           <?php endif; ?>
         </div>
         <?php the_content(); ?>

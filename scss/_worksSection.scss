@@ -1,6 +1,12 @@
+.worksSection{
+  overflow: hidden;
+}
+
 .worksSection__title {
   @include topSectiontitle-h2;
-  animation: slideIn 1s ease;
+  // animation: slideIn 1s ease;
+  transform: translateX(50%);
+  opacity: 0;
 
   @include sp {
     width: 94.6%;
@@ -8,37 +14,16 @@
   }
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 .worksSection__body {
   margin-top: 4rem;
   padding: 0 2.5rem 6rem 0;
   background-color: #ffffff;
-  animation: displayeInFluff 1s ease;
+  transform: translateY(50%);
+  opacity: 0;
 
   @include sp {
     padding: 0 2.7% 6rem 2.7%;
     margin: 4rem auto 0 auto;
-  }
-}
-
-@keyframes displayeInFluff {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
 

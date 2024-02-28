@@ -47,9 +47,10 @@
 
 .mainView__titleContainer {
   display: inline-block;
-  padding: 2rem 4.5rem 5rem 4.5rem;
-  min-width: 50rem;
-  background-color: #ffffff;
+  padding: 4rem 4.5rem 4rem 4.5rem;
+  // min-width: 37rem;
+  // background-color: rgba(248,248,248,0.9);
+  background-color: rgba(255,255,255,0.9);
 
   @include sp {
     padding: 2rem 3rem 4rem 3rem;
@@ -58,19 +59,28 @@
 }
 
 .mainView__title {
-  font-family: "Oswald";
-  font-size: 10rem;
-  font-weight: bold;
+  color:#011950;
+  font-size: 2.8rem;
+  border-bottom: #d40000 solid 1px;
+  padding-bottom: 1rem;
+  @include jp(500);
 
   @include sp {
-    font-size: 4.4rem;
+    font-size: 2.4rem;
   }
 }
 
 .mainView__subtitle {
-  margin-top: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color:#e7c370;
+  text-shadow:
+    -1px -1px 0 rgba(255,255,255,0.3),
+    1px -1px 0 rgba(255,255,255,0.3),
+    -1px 1px 0 rgba(255,255,255,0.3),
+    1px 1px 0 rgba(255,255,255,0.3);
+  // font-weight: bold;
+  @include en(500);
 
   @include sp {
     margin-top: 0.5rem;

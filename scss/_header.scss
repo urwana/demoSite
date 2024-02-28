@@ -14,21 +14,29 @@
 
   img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 
 .header .logoWrapper {
   position: absolute;
   left: 0;
-  z-index: 3;
+  z-index: 5;
+  padding: 2rem;
+  background-color: #011950;
+  // border-radius: 0.4rem;
   @extend %logoWrapper;
-  width: 17.9%;
+  // width: 17.9%;
+  width: 15%;
   cursor: pointer;
 
   @include sp {
     position: relative;
   }
+}
+
+.navigation {
+  padding: 3rem 0;
 }
 
 .navigation__lists {
@@ -43,10 +51,22 @@
 
   a {
     font-size: 1.6rem;
-    font-weight: 500;
+    @include jp(400);
     text-decoration: none;
     color: #000000;
   }
+}
+
+.navigation__lists > li.currentMenuItem::before {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  left: -2.5rem;
+  background: url(../images/balance.svg) no-repeat;
+  background-size: contain;
 }
 
 @media only screen and (max-width: 900px) {
@@ -81,18 +101,18 @@
   }
 }
 
-.nav__contact {
-  background-color: #011950;
+.navigation__lists .nav__contact {
+  background-color: #d40000;
 
   a {
     display: flex;
     align-items: center;
     color: #ffffff;
-    padding: 3rem 4rem;
+    padding: 1rem;
   }
 
   &::after {
-    display: none;
+    background-color: #d40000;
   }
 
   span {

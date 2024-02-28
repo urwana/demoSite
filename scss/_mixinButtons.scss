@@ -13,7 +13,7 @@
   &:first-child {
     padding: 1.5rem $padding-horizontal + "rem" 1.5rem $padding-horizontal +
       "rem";
-    background-image: url("../img/arrow-before.svg");
+    background-image: url("../images/arrow-before.svg");
     background-repeat: no-repeat;
     background-size: 0.5rem;
     background-position: $padding-horizontal-left center;
@@ -22,7 +22,7 @@
   &:last-child {
     padding: 1.5rem $padding-horizontal + "rem" 1.5rem $padding-horizontal +
       "rem";
-    background-image: url("../img/arrow-next.svg");
+    background-image: url("../images/arrow-next.svg");
     background-repeat: no-repeat;
     background-size: 0.5rem;
     background-position: $hover-background-position center;
