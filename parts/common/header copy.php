@@ -19,7 +19,8 @@
     <h1 class="logoWrapper">
       <a href="<?php echo home_url('/'); ?>">
         <picture>
-          <source media="(max-width: 768px)" srcset="<?php echo esc_url(get_theme_file_uri("/images/logo-sp.png")); ?>" class="js-spLogo">
+          <source media="(max-width: 768px)" srcset="<?php echo esc_url(get_theme_file_uri("/images/logo-sp.png")); ?>"
+            class="js-spLogo">
           <img src="<?php echo esc_url(get_theme_file_uri("/images/logo.png")); ?>" alt="ロゴ ExciteCode">
         </picture>
       </a>
@@ -27,20 +28,15 @@
     <nav class="js-navigation navigation">
       <?php get_template_part("parts/common/hamburgerButton"); ?>
       <ul class="navigation__lists">
-
-        <?php
-        $menu_name = 'global_nav';
-        $location = get_nav_menu_locations();
-        $menu = wp_get_nav_menu_object($locations[$menu_name]);
-        $menu_items = wp_get_nav_menu_items($menu->term_id);
-
-        foreach ($menu_items as $item) : ?>
-          <li>
-            <a class="nav-link" href="<?php esc_attr($item->url); ?> "><?php echo esc_html($item->title); ?></a>
-          </li>
-        <?php endforeach ?>
-
-
+        <li><a href="<?php echo home_url('/'); ?>">TOP</a></li>
+        <li><a href="<?php echo get_page_link(11); ?>">ABOUT</a></li>
+        <li><a href="<?php echo get_page_link(13); ?>">SERVICE</a></li>
+        <li><a href="<?php echo get_post_type_archive_link('works'); ?>">WORKS</a></li>
+        <li><a href="<?php echo get_page_link(16); ?>">NEWS</a></li>
+        <li class="nav__contact"><a href="/contact.html">
+            <a href="<?php echo get_page_link(2150); ?>">
+              <i class="fa-regular fa-envelope size-custom displayPc"></i><span>CONTACT</span></a></li>
+        <li class="displaySp"><a href="">プライバシーポリシー</a></li>
       </ul>
       <?php get_template_part("parts/common/snsIconContainer"); ?>
     </nav>
