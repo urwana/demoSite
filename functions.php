@@ -11,10 +11,11 @@ function my_setup()
         'gallery',
         'caption',
     ));
+    register_nav_menu('primary', __('Primary Menu', 'theme-slug'));
 }
+
 add_action('after_setup_theme', 'my_setup');
 
-/* CSSとJavaScriptの読み込み */
 function my_script_init()
 { // WordPressに含まれているjquery.jsを読み込まない
     wp_deregister_script('jquery');
