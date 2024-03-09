@@ -11,7 +11,7 @@ get_template_part('parts/common/header', null, array('base' => $baseNews)); ?>
     get_template_part('parts/common/mainView', null, array('mainViewData' => $mainViewData)); ?>
     <div class="newsMainContents">
       <div class="newsMainContents__tabs">
-        <?php get_template_part('parts/common/linkTabs'); ?>
+        <?php get_template_part('parts/common/linkTabs', null, array('types' => 'news')); ?>
       </div>
       <div class="newsMainContents__body">
         <?php if (have_posts()) : ?>

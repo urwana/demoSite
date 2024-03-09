@@ -1,16 +1,25 @@
-console.log("aboutJs!!");
+const slidePhotoLists = document.querySelectorAll(".slidePhoto__list");
+const slidePhotoList = document.querySelector(".slidePhoto__list");
+const slideCount = slidePhotoLists.length;
+const slideWidth = slidePhotoList.offsetWidth;
+const slidePhotoListsWidth = slideWidth * (slideCount + 1);
+const screenWidth = document.documentElement.clientWidth;
+const overflowWidth = (slidePhotoListsWidth / screenWidth) * 100 - 80;
 
-const slidePhotoLists = document.querySelector(".js_slidePhoto__lists");
-
-console.log(slidePhotoLists);
-
-gsap.to(slidePhotoLists, {
-  autoAlpha: 1,
-  x: "-125%",
-  duration: 10,
-  scrollTrigger: {
-    trigger: slidePhotoLists,
-    start: "top center",
-    markers: true,
+gsap.fromTo(
+  slidePhotoLists,
+  {
+    autoAlpha: 0,
+    x: "50%",
   },
-});
+  {
+    autoAlpha: 1,
+    x: `-${overflowWidth}%`,
+    duration: 3,
+    scrollTrigger: {
+      trigger: slidePhotoLists,
+      start: "top center",
+    },
+    //repeat: -1,
+  }
+);

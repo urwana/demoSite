@@ -1,7 +1,8 @@
 .slidePhoto {
   margin: 12rem 0;
   width: 100%;
-  overflow: hidden;
+  // overflow: hidden;
+  overflow-x: scroll;
 
   @include sp {
     margin: 8rem 0;
@@ -13,8 +14,8 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  transform: translateX(100%);
-  opacity: 0;
+  //transform: translateX(100%);
+  //opacity: 0;
 }
 
 .slidePhoto__list {
@@ -22,8 +23,10 @@
 
   @include sp {
     img {
-      width: 18rem;
+      width: 33.3vw;
       height: auto;
+      width: 100%;
+      aspect-ratio: 6 / 5;
     }
   }
 }

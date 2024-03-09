@@ -16,20 +16,25 @@
   @include sp {
     width: 100%;
     max-width: none;
-    margin: 3rem 0 0 0;
-    padding-bottom: 15rem;
+    margin: 5rem 0 0 0;
+    // padding-bottom: 15rem;
+    padding-bottom: 26rem;
     height: auto;
+    background-color: #011950;
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items:flex-end;
   }
 }
 
 @mixin topSectiontitle-h2 {
-  //font-family: "Oswald";
-  @include jp(400);
-  font-size: 3.2rem;
+  @include jp(700);
+  font-size: 2.4rem;
 
   >span{
+    color:#E6CD92;
     padding-left: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   @include sp {
@@ -47,6 +52,34 @@
   background-color: #001135;
   padding: 1.8rem;
   text-align: left;
+}
+
+@mixin balanceMark($type: "normal", $size: 2rem, $position: -3rem ) {
+  content: "";
+  display: block;
+  width: $size;
+  height: $size;
+  position: absolute;
+  top: 0;
+  left: $position;
+  background-size: contain !important;
+  @if $type == "normal" {
+    background: url(../images/balance.svg) no-repeat;
+  } @else if $type == "red" {
+    background: url(../images/balance-red.svg) no-repeat;
+  } @else if $type == "custom" {
+    background: url(../images/balance-navy.svg) no-repeat;
+  } @else {
+    // デフォルトの画像を使用
+    background: url(../images/balance.svg) no-repeat;
+  }
+
+  @include sp {
+    width:1.5rem;
+    height: 1.5rem;
+    top:1.5rem;
+    left:-2.3rem;
+  }
 }
 
 @mixin ellipsisSingle {

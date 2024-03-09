@@ -1,4 +1,4 @@
-<div class="swiperContainer">
+<div class="js_kv swiperContainer">
   <div class="swiper">
     <div class="swiper-wrapper">
       <?php

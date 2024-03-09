@@ -4,8 +4,8 @@
 <main>
   <div class="wrapper">
     <?php $mainViewData = [
-      'pageNameEn' => "Contact",
-      'pageNameJp' => "お問い合わせ",
+      'pageNameEn' => "お問い合わせ",
+      'pageNameJp' => "Contact",
       'pageNames' => ["contact"]
     ];
     get_template_part('parts/common/mainView', null, array('mainViewData' => $mainViewData)); ?>

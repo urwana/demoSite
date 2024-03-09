@@ -3,7 +3,13 @@
 }
 
 .aboutTitleContainer__titleEn {
-  font-size: 1.6rem;
+  color: #d00000;
+  @include en(700);
+  font-size: 1.3rem;
+
+  @include sp {
+    font-size: 1rem;
+  }
 }
 
 .mainTitleContainer {
@@ -14,14 +20,19 @@
 
 .aboutTitleContainer__titleJp {
   margin-top: 1rem;
-  font-family: "Oswald";
-  font-size: 4rem;
+  @include jp(700);
+  font-size: 3.2rem;
   font-weight: bold;
+
+  @include sp {
+    font-size: 1.8rem;
+  }
 }
 
 .decorativeLine {
   width: 6rem;
-  padding-top: 3.5rem;
+  padding-top: 3rem;
   border-bottom: #001e63 solid 1px;
-  margin-left: 2rem;
+  // border-bottom: #E6CD92 solid 1px;
+  margin-left: 1.5rem;
 }

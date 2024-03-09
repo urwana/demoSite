@@ -10,7 +10,7 @@
 
 .card__body {
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   text-align: right;
 }
 
@@ -20,6 +20,13 @@
   text-align: left;
   margin-bottom: 3rem;
   @include ellipsisMulti(5,16rem);
+
+  @include sp {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    line-height: 2.4;
+    @include ellipsisMulti(5,13rem);
+  }
 }
 
 .imgWrapper-card {
@@ -38,10 +45,15 @@
   top: 0;
   left: 0;
   width: calc(100% - 3rem);
-  height: calc(100% - 5.5rem);
   color: #ffffff;
   text-align: left;
-  padding: 5.5rem 0 0 3rem;
+  margin-top: 5rem;
+  padding: 1.5rem 1.5rem 2.2rem 3rem;
+  background:rgba(0,30,99,0.7)  url(../images/pattern2.png);
+
+  @include sp {
+    width: 100%;
+  }
 }
 
 .serviceNumber {

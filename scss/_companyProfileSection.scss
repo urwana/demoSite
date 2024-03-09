@@ -4,16 +4,21 @@
   background-color: #f8f8f8;
 
   @include sp {
-    padding-left: 0;
-    padding: 6.3rem 0 0 5%;
+    margin-top: 5.6rem;
+    padding: 5.6rem 4vw;
   }
 }
 
 .companyProfileSection__table {
   margin-top: 6.5rem;
+
+  @include sp {
+    margin-top: 3.2rem;
+  }
 }
 
 .table-companyProfile {
+  width: 100%;
   tr {
     border-bottom: #e2e2e2 solid 1px;
   }

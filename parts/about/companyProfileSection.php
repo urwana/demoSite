@@ -5,7 +5,7 @@
   <div class="companyProfileSection__table">
     <table class="table-companyProfile">
       <tr>
-        <th>事務所めい</th>
+        <th>事務所名</th>
         <td>Aventadole 弁護士事務所</td>
       </tr>
       <tr>

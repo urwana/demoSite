@@ -2,33 +2,41 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 15rem;
+  margin-top: 5rem;
 
   @include sp {
-    display: block;
+    flex-direction: column;
     width: 94.6%;
-    margin: 6rem auto 0 auto;
+    margin-inline: auto;
+    margin-top: 0;
   }
 }
 
 .newsSection__head {
-  flex-basis: 30rem;
+  width: 18%;
+
+  @include sp {
+    width: 100%;
+  }
 }
 
 .newsSection__title {
   @include topSectiontitle-h2;
+  text-align: left;
 }
 
 .newsSection__linkContainer {
-  margin-top: 5rem;
+  margin-top: 3.2rem;
 }
 
 .newsSection__body {
-  padding-left: 12%;
+  padding-left: 4%;
+  width: 96%;
   border-left: #e2e2e2 solid 1px;
   flex: 1;
 
   @include sp {
+    margin-top: 3.2rem;
     padding-left: 3rem;
     border-left: none;
   }

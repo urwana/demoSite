@@ -12,7 +12,8 @@
   <div class="aboutSection__textContainer">
     <h2 class="aboutSection__title">私たち<span>About us</span></h2>
     <div class="aboutSection__text">
-      相続、不動産売買、遺言に関することや、官公署への行政手続き等で何かお困りごとがございましたら、お気軽にご相談下さい。また豊富な公務員経験を活かし、公務員の採用試験や現職公</div>
+      相続、不動産売買、遺言に関することや、官公署への行政手続き等で何かお困りごとがございましたら、お気軽にご相談下さい。<br>各分野に精通した弁護士が、クライアントの皆様の権利の実現、ビジネスの円滑な遂行、紛争の解決のために、全力を尽くして参ります。<br>合理的で適切な解決を得る為に、高度なリーガルサービスを必要とされている方は、是非当事務所にご相談ください。
+    </div>
     <div class="aboutSection__readMore">
       <?php
       $link = "./about.html";

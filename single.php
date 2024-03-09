@@ -7,18 +7,28 @@ get_template_part('parts/common/header', null, array('base' => $baseNewsDetail))
     <div class="newsDetail">
       <div class="newsDetail__main">
         <div class="newsDetail__head">
+          <?php
+          // $current_category_id = get_queried_object_id();
+          $categories = get_categories(array(
+            'orderby' => 'name',
+            'order'   => 'ASC',
+            // 表示するカテゴリーの数を指定
+            'number'  => 5
+          )); ?>
           <?php foreach ($categories as $category) {
             echo '<span class="newsDetail__label">' . esc_html($category->name) . '</span>';
           } ?>
           <div class="newsDetail__title"><?php the_title(); ?></div>
-          <time class="newsDetail__date" datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y年n月j日'); ?>
+          <time class="newsDetail__date"
+            datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y年n月j日'); ?>
           </time>
         </div>
         <div class="newsDetail__imgContainer">
           <?php if (has_post_thumbnail()) : ?>
-            <?php the_post_thumbnail('full', array('class' => 'detail__thumbnail')); ?>
+          <?php the_post_thumbnail('full', array('class' => 'detail__thumbnail')); ?>
           <?php else : ?>
-            <img class="detail__thumbnail" src="<?php echo esc_url(get_theme_file_uri("/images/articleNone.jpg")); ?>" alt="NoImage画像" />
+          <img class="detail__thumbnail" src="<?php echo esc_url(get_theme_file_uri("/images/articleNone.jpg")); ?>"
+            alt="NoImage画像" />
           <?php endif; ?>
         </div>
         <?php the_content(); ?>

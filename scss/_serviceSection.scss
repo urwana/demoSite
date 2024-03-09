@@ -1,6 +1,11 @@
 .serviceSection {
   margin-top: 12rem;
   padding-bottom: 5.4rem;
+
+  @include sp {
+    padding-bottom: 0;
+    margin-top: 3.2rem;
+  }
 }
 
 .serviceSection__inner {
@@ -11,6 +16,7 @@
 
   @include sp {
     display: block;
+    margin-top: 3.2rem;
   }
 }
 

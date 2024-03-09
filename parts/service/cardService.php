@@ -3,7 +3,7 @@
   <?php foreach ($cardServiceData as $index => $card) { ?>
 
   <section class="cardService__item" id="<?php echo $card['anchorLink']; ?>">
-    <div class="cardService__upperContents">
+    <div class="<?php echo $index % 2 != 0 ? 'cardService__upperContents--reverse' : 'cardService__upperContents' ?>">
       <div class="cardService__header">
         <div class="cardService__no"><?php echo $card['serviceNumber']; ?><span class="decoratedLine"></span>
         </div>
@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="cardService__lowerContents">
-      <div class="cardService__titleSub">FEATURE<span>特徴</span></div>
+      <div class="cardService__titleSub">特 徴<span>Feature</span></div>
       <p class="cardService__featureText"><?php echo $card['featureText']; ?></p>
     </div>
   </section>

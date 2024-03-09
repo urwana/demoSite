@@ -1,5 +1,5 @@
 <?php $mainViewData = $args['mainViewData']; ?>
-<div class="mainView-<?php echo $mainViewData['pageNames'][0] ?>">
+<div class="js_kv mainView-<?php echo $mainViewData['pageNames'][0] ?>">
   <div class="mainView__titleContainer">
     <h2 class="mainView__title"><?php echo $mainViewData['pageNameEn']; ?></h2>
     <div class="mainView__subtitle"><?php echo $mainViewData['pageNameJp'] ?></div>

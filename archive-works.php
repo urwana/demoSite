@@ -11,7 +11,7 @@ get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
     get_template_part('parts/common/mainView', null, array('mainViewData' => $mainViewData)); ?>
     <div class="worksMainContents">
       <div class="worksMainContents__tabs">
-        <?php get_template_part('parts/common/linkTabs'); ?>
+        <?php get_template_part('parts/common/linkTabsTaxonomy', null, array('types' => 'works')); ?>
       </div>
       <?php
       $args = array(

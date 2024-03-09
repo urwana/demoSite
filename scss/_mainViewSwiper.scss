@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 8rem;
+  padding: 0 5.6vw;
   @include sp {
     display: block;
     padding: 0 5%;
@@ -21,11 +21,11 @@
   letter-spacing: 1.5rem;
 
   @include sp {
-    font-size: 3.4rem;
+    font-size: 2rem;
     writing-mode: horizontal-tb;
-    line-height: 2;
+    line-height: 1.6;
     letter-spacing: 0;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -42,4 +42,9 @@
   white-space: nowrap;
   transform: translateX(80%);
   opacity: 0;
+  @include sp {
+    font-size: 4rem;
+    margin-top: 3.2rem;
+    
+  }
 }

@@ -1,7 +1,7 @@
 <div class="linkTabs">
   <?php
   $current_category_id = get_queried_object_id();
-  $categories = get_categories(array(
+  $terms = get_categories(array(
     'orderby' => 'name',
     'order'   => 'ASC',
     // 表示するカテゴリーの数を指定
@@ -21,19 +21,19 @@
   echo sprintf(esc_html__('%s', 'textdomain'), $home_link);
 
   // カテゴリーのリンク
-  if ($categories) {
-    foreach ($categories as $category) {
+  if ($terms) {
+    foreach ($terms as $term) {
       // カレントクラスに付与するクラスを指定できる
-      $category_class = ($current_category_id === $category->term_id) ? 'is-active' : '';
-      $category_link = sprintf(
+      $term_class = ($current_category_id === $term->term_id) ? 'is-active' : '';
+      $term_link = sprintf(
         // 各カテゴリーに付与するクラスを指定できる
         '<a class="linkTab %s" href="%s" alt="%s">%s</a>',
-        $category_class,
-        esc_url(get_category_link($category->term_id)),
-        esc_attr(sprintf(__('View all posts in %s', 'textdomain'), $category->name)),
-        esc_html($category->name)
+        $term_class,
+        esc_url(get_category_link($term->term_id)),
+        esc_attr(sprintf(__('View all posts in %s', 'textdomain'), $term->name)),
+        esc_html($term->name)
       );
-      echo sprintf(esc_html__('%s', 'textdomain'), $category_link);
+      echo sprintf(esc_html__('%s', 'textdomain'), $term_link);
     }
   }
   ?>

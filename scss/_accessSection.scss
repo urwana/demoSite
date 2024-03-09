@@ -3,7 +3,7 @@
   padding-left: 17rem;
 
   @include sp {
-    margin-top: 8rem;
+    margin-top: 5.6rem;
     padding-left: 5%;
   }
 }
@@ -16,4 +16,8 @@
 .googleMap {
   height: 40rem;
   margin-top: 6rem;
+
+  @include sp {
+    margin-top: 3.2rem;
+  }
 }

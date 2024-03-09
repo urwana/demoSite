@@ -2,131 +2,134 @@
   color: hsl(0, 0%, 100%);
 }
 
-.contactMethod {
-  border: solid 1px #ffffff;
-  padding: 2rem 3.1rem;
-  border-radius: 0.4rem;
-  max-width: 23.5rem;
-  cursor: pointer;
-
-  &:nth-of-type(1) {
-    margin-bottom: 2rem;
-    @include buttonHoverAnimation;
-  }
-
-  &:nth-of-type(2) {
-    margin-bottom: 2.4rem;
-  }
-}
-
-@include sp {
-  .contactMethod {
-    border: solid 1px #ffffff;
-    padding: 2rem 3.1rem;
-    border-radius: 0.4rem;
-    max-width: 23.5rem;
-
-    &:nth-of-type(1) {
-      margin-bottom: 2.5rem;
-    }
-
-    &:nth-of-type(2) {
-      margin-bottom: 1.2rem;
-    }
-  }
-}
-
 .footer__upperContents {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: left;
-  align-items: center;
-  background-color: #011950;
+  padding: 5.8rem 9.72% 5.6rem 11.9444%;
+  background: #011950 url("../images/pattern2.png");
 }
 
 @include sp {
   .footer__upperContents {
+    padding: 3.2rem 5.6vw;
     display: block;
   }
+}
 
-  .contactMethod {
-    margin: auto;
+.contactMethodLead__title {
+  font-size: 2.4rem;
+  @include jp(500);
+
+  @include sp {
+    font-size: 1.6rem;
+  }
+}
+
+.contactMethodLead__text {
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  @include jp(400);
+
+  @include sp {
+    font-size: 1.4rem;
+  }
+}
+
+.contactMethod__date {
+  margin-top: 1.6rem;
+}
+
+.hours {
+  margin-top: 0;
+  font-size: 1.6rem;
+  @include jp(400);
+}
+
+.contactMethodWrapper {
+  margin-top: 2rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2.4rem 0 0 0;
+
+  @include sp {
+    padding: 3.2rem 0;
+    flex-direction: column;
+  }
+}
+
+.contactMethod--phone {
+  font-size: 2.4rem;
+  @include en(500);
+
+  @include sp {
+    font-size: 1.6rem;
+  }
+}
+
+.contactMethod--form {
+  font-size: 2.8rem;
+  border: solid 1px #ffffff;
+  padding: 2rem 3.1rem;
+  border-radius: 0.4rem;
+  margin-left: 6vw;
+  cursor: pointer;
+  @include buttonHoverAnimation;
+
+  @include sp {
+    margin-left: 0;
+    margin-top: 3.2rem;
+    font-size: 1.8rem;
+    display: block;
+    border: solid 1px #ffffff;
+    padding: 2rem 3.1rem;
+    border-radius: 0.4rem;
+    max-width: max-content;
   }
 }
 
 .contactMethod__text {
-  font-size: 2.2rem;
-  margin-left: 1rem;
-}
-
-.textContainer {
-  margin: auto;
-}
-
-.textContainer__lead {
   font-size: 1.8rem;
-  line-height: 3rem;
-  margin-top: 8.4rem;
-  margin-bottom: 2.4rem;
-}
-
-@include sp {
-  .textContainer {
-    padding: 8rem 0;
-  }
-
-  .textContainer__lead {
-    text-align: center;
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-    margin-top: 0;
-    margin-bottom: 5rem;
-  }
-
-  .officeHours {
-    margin-top: 0;
-    text-align: center;
-    font-size: 1.2rem;
-  }
-}
-
-.imgWrapper {
-  width: 57%;
-  height: 44.6rem;
-
-  > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-@include sp {
-  .imgWrapper {
-    width: 100%;
-  }
 }
 
 .footer__lowerContents {
   background-color: #001135;
   padding: 5.8rem 9.72% 5.6rem 11.9444%;
+
+  @include sp {
+    padding: 3.2rem 5.6vw;
+  }
 }
 
 .footer__lowerContentsInner {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+
+  @include sp {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
-@include sp {
-  .footer__lowerContents {
-    padding: 6rem 0 3rem 5rem;
-  }
+.leftContents {
+  margin-top: 1rem;
 
-  .footer__lowerContentsInner {
-    flex-direction: row;
-    flex-direction: column-reverse;
+  @include sp {
+    width: 100%;
+    margin-top: 3.2rem;
+  }
+}
+
+.logoIconContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include sp {
+    justify-content: space-between;
     align-items: flex-start;
   }
 }
@@ -134,7 +137,6 @@
 .footer .logoWrapper {
   @extend %logoWrapper;
   width: 40%;
-  aspect-ratio: 258 / 180;
 
   @include sp {
     width: 11.4rem;
@@ -157,14 +159,11 @@
 
 .snsIconContainer {
   margin-left: 4.6rem;
-}
-
-@include sp {
-  .snsIconContainer {
-    margin-left: 0;
-    margin-top: 5rem;
+  @include sp {
+      margin-left: 3.2rem;
   }
-}
+  }
+
 
 .sns-icon-custom::before {
   font-size: 2.2rem;
@@ -174,28 +173,6 @@
   margin-left: 1.7rem;
 }
 
-.logoIconContainer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-@include sp {
-  .logoIconContainer {
-    display: block;
-  }
-}
-
-.leftContents {
-  margin-top: 1rem;
-}
-
-@include sp {
-  .leftContents {
-    margin-top: 6rem;
-  }
-}
-
 .footerNavigation {
   a {
     @include jp(500);
@@ -203,29 +180,24 @@
     @include underlineAnimation(#ffffff, 1px, 0.3s);
   }
 
-  li:not(:first-child) {
-    margin-left: 3rem;
-  }
-
   @include sp {
-    li:not(:first-child) {
-      margin-left: 0;
-      margin-top: 2.8rem;
-    }
-  }
-}
-
-.footerNavigation__lists{
-  display: flex;
-  justify-content: flex-start;
-}
-
-@include sp {
-  .footerNavigation {
     a {
       font-size: 1.4rem;
       @include jp(400);
     }
+  }
+}
+
+.footerNavigation__lists {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footerNavigation__list {
+  @include sp {
+    margin: 0;
   }
 }
 
@@ -237,6 +209,6 @@
 
   @include sp {
     top: 0;
-    margin-top: 5.6rem;
+    margin-top: 3.2rem;
   }
 }

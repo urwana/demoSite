@@ -54,6 +54,8 @@ function my_script_init()
         wp_enqueue_style('custom-front-page-css', get_template_directory_uri() . '/css/top.css', array(), '1.0.0');
         wp_enqueue_script('swiper-js', '//cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), '1.0.1', true);
         wp_enqueue_script('top-js', get_template_directory_uri() . '/js/top.js', array('jquery', 'gsap'), '1.0.1', true);
+    } elseif (is_404()) {
+        wp_enqueue_style('custom-404-css', get_template_directory_uri() . '/css/page404.css', array(), '1.0.0');
     } else {
         wp_enqueue_style('custom-general-css', get_template_directory_uri() . '/css/style.css', array(), '1.0.0');
     }

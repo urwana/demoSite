@@ -5,6 +5,7 @@ html {
 body {
   //font-family: "Noto Sans JP", "Oswald", sans-serif;
   font-family: $font-family;
+  border-top: solid 1px transparent;
 }
 
 header,
@@ -13,16 +14,35 @@ footer {
   font-weight: 500;
 }
 
+.hidden{
+  visibility: hidden;
+  opacity: 0;
+}
+
 .wrapper {
   width: 100%;
-  max-width: 1920px;
+  // max-width: 1920px;
   margin: auto;
   position: relative;
+}
+
+.contents {
+  width: 100%;
+  // max-width: 1100px;
+  margin-inline: auto;
+
+  @include sp {
+    width: 94.6%;
+  }
 }
 
 .contents-dark {
   background-color: #f8f8f8;
   padding-bottom: 16.5rem;
+
+  @include sp {
+    padding-bottom: 5.6rem;
+  }
 }
 
 .contents__inner-dark {
@@ -56,12 +76,3 @@ footer {
   }
 }
 
-.contents {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
-
-  @include sp {
-    width: 94.6%;
-  }
-}

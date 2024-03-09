@@ -2,9 +2,13 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  z-index: 5;
 
   @include sp {
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
 }
 
@@ -24,14 +28,24 @@
   z-index: 5;
   padding: 2rem;
   background-color: #011950;
-  // border-radius: 0.4rem;
   @extend %logoWrapper;
-  // width: 17.9%;
   width: 15%;
   cursor: pointer;
 
   @include sp {
     position: relative;
+  }
+}
+
+// js での制御用
+.header .logoWrapper.simple {
+  @include sp {
+    background-color: transparent;
+    padding: 0 0 0 1.5rem;
+    img {
+      width: 4rem;
+      object-fit: contain;
+    }
   }
 }
 
@@ -58,21 +72,14 @@
 }
 
 .navigation__lists > li.currentMenuItem::before {
-  content: "";
-  display: block;
-  width: 2rem;
-  height: 2rem;
-  position: absolute;
-  top: 0;
-  left: -2.5rem;
-  background: url(../images/balance.svg) no-repeat;
+  @include balanceMark;
   background-size: contain;
 }
 
 @media only screen and (max-width: 900px) {
   .navigation__lists {
     > li {
-      margin-left: 3rem;
+      margin-left: 4rem;
     }
 
     a {
@@ -102,7 +109,8 @@
 }
 
 .navigation__lists .nav__contact {
-  background-color: #d40000;
+  background: #d40000 url("../images/pattern2.png");
+  border-radius: 0.2rem;
 
   a {
     display: flex;
@@ -112,26 +120,16 @@
   }
 
   &::after {
-    background-color: #d40000;
+    background: #d40000;
   }
 
-  span {
-    margin-left: 1rem;
-  }
-}
-
-@include sp {
-  .nav__contact {
-    background-color: initial;
+  @include sp {
+    background: none;
     padding: 1.2rem 0;
 
     a {
       display: inline-block;
       padding: 0;
-    }
-
-    span {
-      margin-left: 0;
     }
   }
 }

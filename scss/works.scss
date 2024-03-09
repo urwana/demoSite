@@ -21,8 +21,9 @@
   margin: 9.6rem auto 12rem;
 
   @include sp {
+    margin: 3.2rem auto 3.2rem;
     display: block;
-    padding: 3.3rem 6.67% 8rem;
+    padding: 3.2rem 6.67% 3.2rem;
   }
 }
 
@@ -36,6 +37,7 @@
   border-left: #e2e2e2 solid 1px;
 
   @include sp {
+    margin-top: 3.2rem;
     padding: 0;
     border-left: transparent;
   }

@@ -21,25 +21,12 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const identifyDevice = () => {
-  const ua = navigator.userAgent;
-  if (
-    ua.indexOf("iPhone") > 0 ||
-    ua.indexOf("iPod") > 0 ||
-    (ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0)
-  ) {
-    return "sp";
-  } else {
-    return "pc";
-  }
-};
-
 const mainCopy = document.querySelector(".js_mainCopy");
 gsap.to(mainCopy, {
   autoAlpha: 1,
-  x: -18,
+  x: "5.6vw",
   duration: 2,
-  ease: "power1.inOut",
+  ease: "expo.Out",
   scrollTrigger: {
     trigger: ".js_mainCopy",
     start: "top bottom 30%",
@@ -62,9 +49,9 @@ gsap.to(workSectionTitle, {
 gsap.to(workSectionBody, {
   autoAlpha: 1,
   y: "0%",
-  duration: 2,
+  duration: 3,
   scrollTrigger: {
     trigger: workSectionTitle,
-    start: "center center",
+    start: "center bottom",
   },
 });

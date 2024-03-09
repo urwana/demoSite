@@ -3,7 +3,6 @@
 
 <main>
   <div class="wrapper">
-    <?php get_template_part('parts/common/header'); ?>
     <div class="page404">
       <div class="mainView-404">
         <h2 class="mainView__title-404">404 Not Found</h2>
