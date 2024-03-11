@@ -11,6 +11,12 @@
 
 }
 
+.mainViewwSwiper__copy{
+  flex: 1;
+  display:flex;
+  justify-content: center;
+}
+
 .catchcopy-vertical {
   font-size: 4.8rem;
   color:#011950;
@@ -45,6 +51,5 @@
   @include sp {
     font-size: 4rem;
     margin-top: 3.2rem;
-    
   }
 }

@@ -9,8 +9,7 @@
       'pageNames' => ["contact"]
     ];
     get_template_part('parts/common/mainView', null, array('mainViewData' => $mainViewData)); ?>
-    <div class="contact">
-      <?php echo do_shortcode('[contact-form-7 id="4fae6e6" title="contact"]'); ?> </div>
+    <?php echo do_shortcode('[contact-form-7 id="4fae6e6" title="contact"]'); ?>
     <?php get_template_part('parts/common/footerSimple'); ?>
   </div>
 </main>

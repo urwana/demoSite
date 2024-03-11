@@ -125,9 +125,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 8rem auto 12rem;
-  width: 100%;
-  max-width: 110rem;
+  margin-inline: auto;
+  margin-top: 8rem;
+  margin-bottom: 12rem;
+  width: 76.39%;
+  //max-width: 110rem;
 
   @include sp {
     display: block;
@@ -137,17 +139,30 @@
 
 .newsDetail__main {
   display: block;
-  width: 100%;
-  max-width: 76rem;
+  // width: 100%;
+  // max-width: 76rem;
   padding: 0 4rem;
+  flex-grow: 0; /* 伸びる幅を0に設定 */
+  flex-shrink: 0; /* 縮む幅を0に設定 */
+  flex-basis: 68%; /* 基本の幅を30%に設定 */
 
   @include sp {
     padding: 0 6.67% 8rem;
   }
 }
 
+.newsDetail__sideBar{
+  flex-grow: 0; /* 伸びる幅を0に設定 */
+  flex-shrink: 0; /* 縮む幅を0に設定 */
+  flex-basis: 30%; /* 基本の幅を68%に設定 */
+}
+
 .newsDetail__label {
   @include label(#626262, #f3f3f3);
+}
+
+.newsDetail__label:not(:first-child){
+  margin-left: 2rem;
 }
 
 .newsDetail__date {

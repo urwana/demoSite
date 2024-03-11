@@ -3,7 +3,7 @@
 }
 
 .footer__upperContents {
-  padding: 5.8rem 9.72% 5.6rem 11.9444%;
+  padding: 5.6rem 11.8%;
   background: #011950 url("../images/pattern2.png");
 }
 
@@ -29,17 +29,19 @@
   @include jp(400);
 
   @include sp {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
 .contactMethod__date {
   margin-top: 1.6rem;
+  line-height: 1.6;
 }
 
 .hours {
   margin-top: 0;
   font-size: 1.6rem;
+  line-height: 1.6;
   @include jp(400);
 }
 
@@ -93,7 +95,7 @@
 
 .footer__lowerContents {
   background-color: #001135;
-  padding: 5.8rem 9.72% 5.6rem 11.9444%;
+  padding: 5.6rem 11.8%;
 
   @include sp {
     padding: 3.2rem 5.6vw;

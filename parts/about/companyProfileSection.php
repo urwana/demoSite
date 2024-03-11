@@ -6,7 +6,7 @@
     <table class="table-companyProfile">
       <tr>
         <th>事務所名</th>
-        <td>Aventadole 弁護士事務所</td>
+        <td>Aventador 弁護士事務所</td>
       </tr>
       <tr>
         <th>所在地</th>

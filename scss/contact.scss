@@ -15,10 +15,20 @@
 }
 
 .contact {
+  width: 44%;
+  max-width: 110rem;
+  margin-inline:auto;
+  display: flex;
+  justify-content: center;
+
   @include sp {
-    width: 89%;
-    margin: auto;
+    width: 94.6%;
+    margin-inline: auto;
   }
+}
+
+.contact__inner{
+  width: 100%;
 }
 
 .contact__lead {
@@ -27,38 +37,56 @@
 
   @include sp {
     font-size: 1.4rem;
+    line-height: 2.8;
+  }
+}
+
+.contact__lead--confirm {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+  @include sp {
+  text-align: left;
+    font-size: 1.4rem;
+    line-height: 2.8;
   }
 }
 
 .contactForm {
   margin: 7rem auto 12rem;
-  width: 64rem;
+  //width: 64rem;
 
   @include sp {
-    margin: 8rem auto 8rem;
+    margin: 5.6rem auto 5.6rem;
     width: 100%;
   }
 }
 
 .contactTable {
   margin-top: 9rem;
+  width: 100%;
 
   @include sp {
     margin-top: 1.5rem;
   }
 }
 
+.contactTable table{
+  width:100%;
+}
+
 .contactTable tr,
 .contactTable th,
-.contactTable td {
-  display: inline-block;
+.contactTable td
+{
+  display: block;
+  width: 100%;
 }
 
 .contactTable th,
 .contactTable td {
   font-size: 1.5rem;
   font-weight: normal;
-  display: block;
 }
 
 .contactTable tr {
@@ -76,7 +104,8 @@
 
 %formBase {
   border: #e2e2e2 1px solid;
-  width: 64rem;
+  // width: 64rem;
+  width:100%;
   border-radius: 0.4rem;
   padding-left: 1rem;
 
@@ -87,6 +116,10 @@
 
 .contactTable label {
   margin-right: 2rem;
+
+  @include sp {
+    margin-right: 0;
+  }
 }
 
 .contactTable input {
@@ -122,11 +155,17 @@
   font-size: 1.4rem;
 }
 
+.wpcf7-list-item {
+  margin-left: 0 !important;
+}
+
 .contactTable-confirm {
-  margin-top: 9.5rem;
+  margin-top: 5.6rem;
+  display: flex;
+  justify-content: center;
 
   @include sp {
-    margin-top: 3rem;
+    margin-top: 3.2rem;
   }
 }
 
@@ -176,8 +215,8 @@
 }
 
 .contact__thankEn {
-  font-family: "Oswald";
-  font-size: 4rem;
+  @include en(700);
+  font-size: 3.2rem;
   font-weight: bold;
 
   @include sp {
@@ -186,7 +225,7 @@
 }
 
 .contact__thankJp {
-  margin-top: 1rem;
+  margin-top: 3.2rem;
   font-size: 1.8rem;
 
   @include sp {
@@ -216,11 +255,15 @@
 }
 
 .contact__buttonContainer {
-  margin-top: 3.6rem;
+  margin-top: 5.6rem;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  //align-items: center; //pc2560 でずれる
+
+  @include sp {
+    margin-top: 3.2rem;
+  }
 }
 
 %contact__button {
