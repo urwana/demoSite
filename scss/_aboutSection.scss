@@ -1,6 +1,6 @@
 .aboutSection {
   display: flex;
-  justify-content: flex-start;
+  //justify-content: flex-start;
   margin-top: 6rem;
 
   @include sp {
@@ -8,17 +8,22 @@
   }
 }
 
-@include sp {
-  .aboutSection__imgWrapper {
-    img {
-      width: 100%;
-      height: auto;
-    }
+.aboutSection__imgWrapper {
+  flex-grow: 0; /* 伸長の制限 */
+  flex-shrink: 0; /* 縮小の制限 */
+  flex-basis: 45%; /* 幅の初期値 */
+
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 
 .aboutSection__textContainer {
-  margin-left: 6rem;
+  flex-grow: 0; /* 伸長の制限 */
+  flex-shrink: 0; /* 縮小の制限 */
+  flex-basis: 55%; /* 幅の初期値 */
+  padding-left: 4vw; /* 画像とテキストの間隔を設定 */
 
   @include sp {
     margin: 3rem 0 0 0;
@@ -29,32 +34,18 @@
   @include topSectiontitle-h2;
 }
 
-// .aboutSection__title {
-//   @include jp(700);
-//   font-size: 2rem;
-//   font-weight: bold;
-//   color: #000000;
-// }
-
-// .aboutSection__title > span{
-//   @include en(500);
-//   padding-left: 2rem;
-//   font-size: 1.3rem;
-
-// }
-
 .aboutSection__text {
-  margin-top: 4.6rem;
+  margin-top: 3.2rem;
   font-size: 1.6rem;
   line-height: 3.2rem;
 
-  @include sp {
+  @include tb {
     margin-top: 3rem;
     font-size: 1.4rem;
   }
 }
 
 .aboutSection__readMore {
-  margin-top: 4.6rem;
+  margin-top: 3.2rem;
   text-align: right;
 }

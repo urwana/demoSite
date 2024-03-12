@@ -2,7 +2,7 @@
   width: 30%;
   max-width: 335px;
 
-  @include sp {
+  @media only screen and (max-width: 960px) {
     width: 100%;
     max-width: none;
   }
@@ -21,10 +21,10 @@
   margin-bottom: 3rem;
   @include ellipsisMulti(5,16rem);
 
-  @include sp {
+  @include tb {
     font-size: 1.4rem;
     margin-bottom: 2rem;
-    line-height: 2.4;
+    line-height: 2.2;
     @include ellipsisMulti(5,13rem);
   }
 }
@@ -32,7 +32,13 @@
 .imgWrapper-card {
   position: relative;
 
-  @include sp {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  @media only screen and (max-width: 960px) {
     img {
       width: 100%;
       height: auto;
@@ -42,16 +48,16 @@
 
 .pictureText {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   width: calc(100% - 3rem);
   color: #ffffff;
   text-align: left;
-  margin-top: 5rem;
   padding: 1.5rem 1.5rem 2.2rem 3rem;
   background:rgba(0,30,99,0.7)  url(../images/pattern2.png);
 
-  @include sp {
+  @include tb {
     width: 100%;
   }
 }
@@ -63,5 +69,9 @@
 
 .serviceName {
   margin-top: 1.6rem;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
+
+  @include tb{
+    font-size: 1.8rem;
+  }
 }

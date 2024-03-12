@@ -4,6 +4,19 @@
   }
 }
 
+// @mixin tb {
+//   @media only screen and (min-width: 769px) and (max-width: 1279px) {
+//     @content;
+//   }
+// }
+
+@mixin tb {
+  @media only screen and (max-width: 1279px) {
+    @content;
+  }
+}
+
+
 @mixin mainView {
   height: 51.4rem;
   position: relative;
