@@ -22,7 +22,6 @@ get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
               $photoNumber = $index + 1;
             ?>
               <?php get_template_part('parts/works/worksLists'); ?>
-
               <?php $index++; ?>
             <?php endwhile; ?>
           </ul>
