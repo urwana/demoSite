@@ -176,6 +176,7 @@
 }
 
 .footerNavigation {
+  margin-left: 5.6vw;
   a {
     @include jp(500);
     font-size: 1.6rem;
@@ -183,6 +184,7 @@
   }
 
   @include sp {
+    margin-left: 0;
     a {
       font-size: 1.4rem;
       @include jp(400);
@@ -194,7 +196,7 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 3rem;
 }
 
 .footerNavigation__list {

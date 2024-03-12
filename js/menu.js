@@ -33,10 +33,10 @@ const identifyDevice = () => {
 const header = document.querySelector(".js_header");
 const logo = document.querySelector(".js_logo");
 const kvElement = document.querySelector(".js_kv");
+// TODO: 数値ベタ書き直す
 const sliderHeight = kvElement ? kvElement.offsetHeight : 200;
-const footerPosition = document
-  .querySelector(".js_footer")
-  .getBoundingClientRect().top;
+const footer = document.querySelector(".js_footer");
+const footerPosition = footer ? footer.getBoundingClientRect().top : 315;
 
 const currentDevice = identifyDevice();
 
