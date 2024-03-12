@@ -32,7 +32,8 @@ const identifyDevice = () => {
 
 const header = document.querySelector(".js_header");
 const logo = document.querySelector(".js_logo");
-const sliderHeight = document.querySelector(".js_kv").offsetHeight;
+const kvElement = document.querySelector(".js_kv");
+const sliderHeight = kvElement ? kvElement.offsetHeight : 200;
 const footerPosition = document
   .querySelector(".js_footer")
   .getBoundingClientRect().top;
