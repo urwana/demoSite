@@ -21,10 +21,15 @@
   margin-top: 9.6rem;
   margin-bottom: 12rem;
 
-  @include sp {
-    margin: 3.2rem auto 3.2rem;
+  @include tb {
     display: block;
-    padding: 3.2rem 6.67% 3.2rem;
+    width: calc(100% - 6rem);
+    margin-inline: auto;
+  }
+
+  @include sp {
+    width: 94.6%;
+    margin-inline:auto;
   }
 }
 

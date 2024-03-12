@@ -16,10 +16,10 @@
   justify-content: flex-start;
   //margin-inline: auto;
   //margin-left: 11.8%;
-  
 
-  @include sp {
+  @include tb {
     display: block;
+    width:94.6%;
   }
 }
 
@@ -27,7 +27,7 @@
   padding-top: 7.5rem;
 
   @include sp {
-    padding: 6.3rem 5% 0;
+    padding: 6.3rem 2.7% 0;
   }
 }
 
@@ -60,10 +60,11 @@
 
   @include sp {
     margin: 3rem 0 0 0;
-    padding: 0 5%;
+    padding: 0 2.7%;
 
     >img{
       width: 100%;
+      height: auto;
     }
   
   }

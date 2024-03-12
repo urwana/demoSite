@@ -58,7 +58,8 @@
   background:rgba(0,30,99,0.7)  url(../images/pattern2.png);
 
   @include tb {
-    width: 100%;
+    width: 95%;
+    margin: 0 2.5% 0 2.5%;
   }
 }
 

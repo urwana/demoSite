@@ -21,19 +21,18 @@
   height: 51.4rem;
   position: relative;
   margin: 15rem 0 0 11.8%;
-  padding-bottom: 50rem;
+  padding-bottom: 35.7vw;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
-  @include sp {
+  @include tb {
     width: 100%;
     max-width: none;
     margin: 5rem 0 0 0;
     // padding-bottom: 15rem;
     padding-bottom: 26rem;
     height: auto;
-    background-color: #011950;
     // display: flex;
     // justify-content: flex-start;
     // align-items:flex-end;
@@ -96,7 +95,7 @@
 }
 
 @mixin ellipsisSingle {
-  white-space: nowrap;
+  // white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }

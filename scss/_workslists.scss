@@ -5,6 +5,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+
+  @include sp {
+    flex-direction: column;
+  }
 }
 
 .list-textContainer-work {
@@ -14,8 +18,13 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @include sp {
+  @include tb {
     margin-left: 1.5rem;
+  }
+
+  @include sp {
+    margin-left: 0;
+    margin-top: 1.5rem;
   }
 }
 
@@ -23,7 +32,7 @@
   margin-top: 4rem;
   @include date;
 
-  @include sp {
+  @include tb {
     margin-top: 1rem;
   }
 }
@@ -53,49 +62,71 @@
   font-size: 1.8rem;
   cursor: pointer;
   line-height: 3.2rem;
+  width: 80%;
   @include underlineAnimation(#000000, 1px, 0.3s);
+  @include ellipsisSingle;
 
-  @include sp {
+  @include tb {
     font-size: 1.4rem;
     padding: 0;
     line-height: 2.8rem;
     margin-top: 1rem;
-    width: auto;
+  }
+
+  @include sp {
+    // white-space: normal;
+    width:94.6%;
+    margin-inline: auto;
   }
 }
 
-.list__text-work {
+.list-textContainer-work > p {
   margin-top: 3rem;
   font-size: 1.6rem;
   font-weight: normal;
   color: #626262;
   line-height: 2.375;
-  max-width: 68rem;
+  @include ellipsisMulti(2, 8rem);
+  width: 80%;
 
-  @include sp {
+  @include tb {
     font-size: 1.4rem;
     padding: 0;
     line-height: 2;
     margin-top: 1rem;
-    width: auto;
+  }
+
+  @include sp {
+    white-space: normal;
+    width:94.6%;
+    margin-inline: auto;
   }
 }
 
 .list-imgContainer-work{
   width: 16rem;
-  aspect-ratio: 1 / 1;
   min-width: 16rem;
+
   img{
     width: 100%;
-    height: 100%;
+    //height: 100%;
     object-fit: contain;
+  }
+
+  @include sp {
+    width: 100%;
+
+    img{
+    width: 100%;
+
+    }
   }
 }
 
 .Labels--works {
   display: inline-block;
 
-  @include sp {
+  @include tb {
     display: inline;
     margin-left: 1rem;
   }
