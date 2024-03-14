@@ -91,6 +91,10 @@ footer {
     opacity: 1;
     transition: opacity .8s ease-in-out;
   }
+
+  &.at-footer {
+    background-color: #e6cd92;
+  }
 }
 
 .toTop{

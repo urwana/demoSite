@@ -95,6 +95,11 @@ window.onscroll = () => {
   getScrolled() > visiblePosition
     ? arrow.classList.add("is-fadein")
     : arrow.classList.remove("is-fadein");
+
+    const footerPosition = footer ? footer.getBoundingClientRect().top : 315;
+    getScrolled() > footerPosition
+      ? arrow.classList.add("at-footer")
+      : arrow.classList.remove("at-footer");
 };
 
 const scrollToTop = () => {
