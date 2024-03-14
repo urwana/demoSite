@@ -4,8 +4,8 @@ get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
   <div class="wrapper">
     <?php
     $mainViewData = [
-      'pageNameEn' => "Taxonomy",
-      'pageNameJp' => "タクソノミー別一覧",
+      'pageNameEn' => "タクソノミー別一覧",
+      'pageNameJp' => "Taxonomy",
       'pageNames' => ["works"]
     ];
     get_template_part('parts/common/mainView', null, array('mainViewData' => $mainViewData)); ?>

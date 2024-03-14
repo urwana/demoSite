@@ -18,13 +18,18 @@
   align-items: flex-start;
   width: 76.39%;
   margin-top: 9.6rem;
+  margin-bottom: 12rem;
   margin-inline:auto;
+
+  @include tb {
+    width: 94.6%;
+  }
 
   @include sp {
     display: block;
     margin: 5.6rem 0;
     width: 94.6%;
-    margin-inline:auto;
+    //margin-inline:auto;
   }
 }
 
@@ -44,10 +49,7 @@
 
   @include sp {
     padding-left: 0;
-    margin-top: 4.2rem;
+    margin-top: 3.2rem;
     border-left: transparent;
   }
-}
-
-.news__lists{
 }

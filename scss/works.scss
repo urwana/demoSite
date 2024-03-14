@@ -17,34 +17,39 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 76.39%;
-  margin-inline: auto;
   margin-top: 9.6rem;
   margin-bottom: 12rem;
+  margin-inline:auto;
 
   @include tb {
-    display: block;
-    width: calc(100% - 6rem);
-    margin-inline: auto;
+    width: 94.6%;
   }
 
   @include sp {
+    display: block;
+    margin: 5.6rem 0;
     width: 94.6%;
     margin-inline:auto;
   }
 }
 
 .worksMainContents__tabs {
-  flex-basis: 26rem;
+  width: 18%;
+
+  @include sp {
+    width: 100%;
+  }
 }
 
 .worksMainContents__body {
-  flex: 1;
-  padding-left: 6rem;
+  padding-left: 4%;
+  width: 96%;
   border-left: #e2e2e2 solid 1px;
+  flex: 1;
 
   @include sp {
+    padding-left: 0;
     margin-top: 3.2rem;
-    padding: 0;
     border-left: transparent;
   }
 }
