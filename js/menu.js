@@ -107,3 +107,20 @@ const scrollToTop = () => {
 arrow.onclick = function() {
   scrollToTop();
 };
+
+// ページ内スムーススクロール(JS)
+document.querySelectorAll('.js_smoothScroll').forEach(function (anchor) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const adjust = 50;
+    let href = this.getAttribute("href");
+    let target = document.querySelector(
+      href === "#" || href === "" ? "html" : href
+    );
+    var position = target.offsetTop + adjust;
+    window.scrollTo({
+      top: position,
+      behavior: "smooth",
+    });
+  });
+});
