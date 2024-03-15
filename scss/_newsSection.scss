@@ -37,8 +37,9 @@
 
   @include sp {
     margin-top: 3.2rem;
-    padding-left: 3rem;
+    padding-left: 0;
     border-left: none;
+    width: 100%;
   }
 }
 

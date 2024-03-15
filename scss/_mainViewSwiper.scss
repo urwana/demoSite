@@ -41,6 +41,7 @@
 }
 
 .mainCopy {
+  display: inline-block;
   font-size: 8rem;
   @include jp(500);
   color:#011950;

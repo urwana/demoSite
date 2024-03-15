@@ -21,10 +21,20 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+const pageWidth =
+  window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
+
 const mainCopy = document.querySelector(".js_mainCopy");
+
+const diffWidth = mainCopy.clientWidth - pageWidth;
+console.log(diffWidth);
+const afterPosition = diffWidth > 0 ? diffWidth * -1 : 0;
+
 gsap.to(mainCopy, {
   autoAlpha: 1,
-  x: "5.6vw",
+  x: `${afterPosition}px`,
   duration: 2,
   ease: "expo.Out",
   scrollTrigger: {
