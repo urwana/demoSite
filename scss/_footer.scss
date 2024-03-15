@@ -131,7 +131,7 @@
   align-items: center;
 
   @include sp {
-    justify-content: space-between;
+    //justify-content: space-between;
     align-items: flex-start;
   }
 }
@@ -162,10 +162,9 @@
 .snsIconContainer {
   margin-left: 4.6rem;
   @include sp {
-      margin-left: 3.2rem;
+    margin-left: 5.6rem;
   }
-  }
-
+}
 
 .sns-icon-custom::before {
   font-size: 2.2rem;

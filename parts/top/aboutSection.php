@@ -16,7 +16,7 @@
     </div>
     <div class="aboutSection__readMore">
       <?php
-      $link = "./about.html";
+      $link = '/about';
       get_template_part('parts/common/readMoreLink', null, array('link' => $link)) ?>
     </div>
   </div>

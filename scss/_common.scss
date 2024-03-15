@@ -20,12 +20,6 @@ footer {
 }
 
 .wrapper {
-  // width: 100%;
-  // max-width: 1920px;
-  // margin: auto;
-  // position: relative;
-  //padding: 0 4%;
-
   @include sp {
     padding: 0;
   }
@@ -108,7 +102,7 @@ footer {
   padding: 2rem;
   z-index: 10;
 
-  @include sp {
+  @include mb {
     right: 3rem;
     bottom: 4rem;
   }

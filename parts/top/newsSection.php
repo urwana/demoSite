@@ -28,7 +28,7 @@
 
     <div class="newsSection__readMore">
       <?php
-      $link =  "./news.html";
+      $link = '/news';
       get_template_part('parts/common/readMoreLink', null, array('link' => $link)) ?>
     </div>
   </div>

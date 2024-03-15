@@ -30,7 +30,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  flex-direction:row-reverse;
+  flex-direction: row-reverse;
 
   @include sp {
     flex-direction: column;
@@ -55,7 +55,7 @@
   //font-family: "Oswald";
   // color: #001e63;
   @include en(700);
-  color:#E6CD92;
+  color: #e6cd92;
   font-size: 4rem;
 
   @include sp {
@@ -88,7 +88,7 @@
   display: inline-block;
   width: 0.2rem;
   height: 3.4rem;
-  background-color: #D00000;
+  background-color: #d00000;
   margin-left: 1.6rem;
   line-height: 3;
 
@@ -96,21 +96,25 @@
     height: 3rem;
   }
 }
-.cardService__imgWrapper{
+.cardService__imgWrapper {
   width: 52.778%;
-  max-width:76rem;
+  max-width: 76rem;
 
-  img {
-    width: 100%;
-    //height: auto;
-    object-fit:cover;
+  @include tb {
+    width: 40%;
   }
 
-@include sp {
+  @include sp {
     width: 100%;
+    max-width:none;
     background-color: #f8f8f8;
     padding-top: 2.6rem;
   }
+}
+
+.cardService__imgWrapper img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .cardService__lowerContents {
@@ -124,13 +128,13 @@
 .cardService__titleSub {
   @include jp(500);
   font-size: 2.2rem;
-  color:#001e63;
+  color: #001e63;
 
   > span {
     font-size: 1.4rem;
     // color: #626262;
     // color:#E6CD92;
-    color:#D00000;
+    color: #d00000;
 
     padding-left: 1.6rem;
   }

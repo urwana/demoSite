@@ -22,7 +22,7 @@
     <?php endif; ?>
     <div class="worksSection__link">
       <?php
-      $workLink = "./work.html";
+      $workLink = "/works";
       get_template_part('parts/common/readMoreLink', null, array('link' => $workLink));
       ?>
     </div>

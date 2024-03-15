@@ -1,4 +1,3 @@
-<?php get_template_part("parts/common/toTop"); ?>
 <footer class="js_footer footer">
   <div class="footer__upperContents">
     <div class="contactMethodLead">

@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
 
-  @include sp {
+  @include tb {
     width: 94.6%;
     margin-inline: auto;
   }

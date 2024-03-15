@@ -12,7 +12,7 @@ $home_link = sprintf(
   '<a class="linkTab %s" href="%s" alt="%s">全て</a>',
   $is_current,
   // カスタム投稿一覧ページのスラッグを指定
-  esc_url(home_url('/category')),
+  esc_url(home_url('/news')),
   // HTML属性内の値をエスケープする
   esc_attr(__('View all posts', 'textdomain'))
 );
