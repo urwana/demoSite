@@ -81,7 +81,6 @@ window.addEventListener("scroll", () => {
 
 const arrow = document.querySelector(".js-scroll-fadein");
 const bodyHeight = document.body.scrollHeight;
-// const visiblePosition = (bodyHeight / 3) * 0.8;
 const visiblePosition =
   window.innerHeight ||
   document.documentElement.clientHeight ||
@@ -96,10 +95,10 @@ window.onscroll = () => {
     ? arrow.classList.add("is-fadein")
     : arrow.classList.remove("is-fadein");
 
-    const footerPosition = footer ? footer.getBoundingClientRect().top : 315;
-    getScrolled() > footerPosition
-      ? arrow.classList.add("at-footer")
-      : arrow.classList.remove("at-footer");
+  const footerPosition = footer ? footer.getBoundingClientRect().top : 315;
+  getScrolled() > footerPosition
+    ? arrow.classList.add("at-footer")
+    : arrow.classList.remove("at-footer");
 };
 
 const scrollToTop = () => {
@@ -113,7 +112,6 @@ arrow.onclick = function() {
   scrollToTop();
 };
 
-// ページ内スムーススクロール(JS)
 document.querySelectorAll('.js_smoothScroll').forEach(function (anchor) {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
