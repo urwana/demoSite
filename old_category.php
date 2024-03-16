@@ -1,4 +1,4 @@
-<?php $baseWork = ['path' => "./", 'title' => "カテゴリー", 'description' => "架空のコーポレートデモサイトのカテゴリーページです。"];
+<?php $baseWork = ['path' => "./", 'title' => "カテゴリー", 'description' => "架空のコーポレートデモサイトの実績紹介ページです。"];
 get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
 <main>
   <div class="wrapper">
@@ -6,22 +6,22 @@ get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
     $mainViewData = [
       'pageNameEn' => "カテゴリー",
       'pageNameJp' => "Category",
-      'pageNames' => ["news"]
+      'pageNames' => ["works"]
     ];
     get_template_part('parts/common/mainView', null, array('mainViewData' => $mainViewData));
     ?>
-    <div class="newsMainContents">
-      <div class="newsMainContents__tabs">
+    <div class="worksMainContents">
+      <div class="worksMainContents__tabs">
         <?php get_template_part('parts/common/linkTabsCategory'); ?>
       </div>
-      <div class="newsMainContents__body">
+      <div class="worksMainContents__body">
         <?php if (have_posts()) : ?>
-          <ul class="news__lists">
+          <ul class="works__lists">
             <?php while (have_posts()) : the_post();
               $index = 0;
               $photoNumber = $index + 1;
             ?>
-              <?php get_template_part('parts/common/newsLists'); ?>
+              <?php get_template_part('parts/works/worksLists'); ?>
               <?php $index++; ?>
             <?php endwhile; ?>
           </ul>

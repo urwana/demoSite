@@ -43,9 +43,9 @@ function my_script_init()
         wp_enqueue_style('custom-page-service-css', get_template_directory_uri() . '/css/service.css', array(), '1.0.0');
     } elseif (is_page('contact') || is_page('confirm') || is_page('complete')) {
         wp_enqueue_style('custom-page-contact-css', get_template_directory_uri() . '/css/contact.css', array(), '1.0.0');
-    } elseif (is_home()) {
+    } elseif (is_home() || is_category()) {
         wp_enqueue_style('custom-page-news-css', get_template_directory_uri() . '/css/news.css', array(), '1.0.0');
-    } elseif (is_month() || is_category() || is_tax()) {
+    } elseif (is_month() || is_tax()) {
         wp_enqueue_style('custom-page-work-css', get_template_directory_uri() . '/css/works.css', array(), '1.0.0');
     } elseif (is_front_page()) {
         wp_enqueue_style('swiper-css', '//cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), '1.0.1');
