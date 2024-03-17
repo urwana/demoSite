@@ -5,7 +5,49 @@ get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
     <?php
 $taxonomy = $request_url_array = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
 $request_target_string = end($request_url_array);
-$displayTaxonomy = '事例 - ' . urldecode($request_target_string);
+
+$title = urldecode($request_target_string);
+$caseName = "";
+
+function returnLawName($title)
+{
+  switch ($title) {
+    case "commercial-law":
+      return "商法";
+      break;
+    case "corporate-law":
+      return "会社法";
+      break;
+    case "labor-law":
+      return "労働法";
+      break;
+    case "civil-code":
+      return  "民法";
+      break;
+        case "international-laws":
+          return "国際法";
+          break;
+        case "antitrust-law":
+          return   "独禁法";
+          break;
+        case "finance-law":
+          return   "金融法";
+          break;
+        case "real-estate-law":
+          return   "不動産法";
+          break;
+        case "environmental-law":
+          return   "環境法";
+          break;
+        default:
+          return "その他";
+          break;
+      }
+    }
+
+
+
+$displayTaxonomy = '事例 - ' . returnLawName(urldecode($request_target_string));
     $mainViewData = [
       'pageNameEn' => $displayTaxonomy,
       'pageNameJp' => "Case List",
