@@ -26,6 +26,11 @@
 
 .newsSection__linkContainer {
   margin-top: 3.2rem;
+
+  @include sp {
+    width: 94.6%;
+    margin-left: 3rem;
+  }
 }
 
 .newsSection__body {

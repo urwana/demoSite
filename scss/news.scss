@@ -22,8 +22,11 @@
   margin-bottom: 12rem;
 
   @include tb {
-    flex-direction: column;
     justify-content: center;
+  }
+
+  @include mb {
+    flex-direction: column;
     width: 100%;
   }
 
@@ -36,8 +39,8 @@
   width: 18%;
 
   @include sp {
-    width: 94%;
-    padding-left: 3%;
+    width: 94.6%;
+    margin-left: 3rem;
   }
 }
 

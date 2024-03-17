@@ -21,6 +21,25 @@
   }
 }
 
+.newsDetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-inline: auto;
+  margin-top: 8rem;
+  margin-bottom: 12rem;
+  width: 76.39%;
+
+  @include mb {
+    width: 94.6%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    margin: 9rem auto 8rem;
+  }
+}
+
 .newsDetail__title {
   margin-top: 2rem;
   font-size: 2.6rem;
@@ -30,7 +49,6 @@
     line-height: 3rem;
   }
 }
-
 
 .newsDetail__main h2 {
   margin-top: 4rem;
@@ -60,18 +78,6 @@
     flex: 1;
   }
 
-  // > span:first-child {
-  //   font-size: 1.8rem;
-  //   border-bottom: 1px solid #001e63;
-  //   padding: 0 0 0.5rem 1.5rem;
-  // }
-
-  // > span:last-child {
-  //   border-bottom: 1px solid #e4e4e4;
-  //   padding: 0 0 0.5rem 1.5rem;
-  //   flex: 1;
-  // }
-
   @include sp {
     > span {
       font-size: 1.4rem;
@@ -86,16 +92,14 @@
 }
 
 .newsDetail__main ul {
-  // margin-bottom: 24px;
   margin: 4.4rem 0;
   font-size: 1.4rem;
   line-height: 4rem;
   margin-left: 2rem;
 }
 
-.newsDetail__imgContainer{
-
-  img{
+.newsDetail__imgContainer {
+  img {
     width: 100%;
     height: auto;
   }
@@ -117,25 +121,10 @@
   background-color: #67a7cc;
 }
 
-.newsDetail__main li+ li {
+.newsDetail__main li + li {
   margin-top: 4px;
 }
 
-.newsDetail {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-inline: auto;
-  margin-top: 8rem;
-  margin-bottom: 12rem;
-  width: 76.39%;
-  //max-width: 110rem;
-
-  @include sp {
-    display: block;
-    margin: 4rem auto 8rem;
-  }
-}
 
 .newsDetail__main {
   display: block;
@@ -151,18 +140,31 @@
   }
 }
 
-.newsDetail__sideBar{
+.newsDetail__sideBar {
   flex-grow: 0; /* 伸びる幅を0に設定 */
   flex-shrink: 0; /* 縮む幅を0に設定 */
   flex-basis: 30%; /* 基本の幅を68%に設定 */
 }
 
-.newsDetail__label {
-  @include label(#626262, #f3f3f3);
+.newsDetail__labels {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+
+  @include mb {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.newsDetail__label:not(:first-child){
-  margin-left: 2rem;
+.newsDetail__label {
+  @include label(#626262, #f3f3f3);
+
+  @include sp {
+  }
+}
+
+.newsDetail__label:not(:first-child) {
+  //margin-left: 2rem;
 }
 
 .newsDetail__date {

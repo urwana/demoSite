@@ -22,14 +22,17 @@
   margin-left: 2rem;
 }
 
+
 .list__text {
+  margin-top: 2rem;
   display: inline-block;
-  margin-top: 3rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  @include jp(700);
   cursor: pointer;
-  width: 100%;
+  max-width: 60%;
+  line-height: 3rem;
   @include ellipsisSingle;
-  @include underlineAnimation(#000000, 1px, 0.3s);
+  @include underlineAnimation(#001e63, 4px, 0.3s);
 
   @include sp {
     font-size: 1.4rem;

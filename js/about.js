@@ -20,6 +20,5 @@ gsap.fromTo(
       trigger: slidePhotoLists,
       start: "top center",
     },
-    //repeat: -1,
   }
 );

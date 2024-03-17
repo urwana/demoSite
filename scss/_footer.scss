@@ -5,10 +5,12 @@
 .footer__upperContents {
   padding: 5.6rem 11.8%;
   background: #011950 url("../images/pattern2.png");
-}
 
-@include sp {
-  .footer__upperContents {
+  @include mb {
+    padding: 5.6rem 8%;
+  }
+
+  @include sp {
     padding: 3.2rem 5.6vw;
     display: block;
   }
@@ -27,6 +29,7 @@
   margin-top: 2.4rem;
   font-size: 1.8rem;
   @include jp(400);
+  line-height: 1.6;
 
   @include sp {
     font-size: 1.6rem;
@@ -97,6 +100,10 @@
   background-color: #001135;
   padding: 5.6rem 11.8%;
 
+  @include mb {
+    padding: 5.6rem 8%;
+  }
+
   @include sp {
     padding: 3.2rem 5.6vw;
   }
@@ -161,6 +168,7 @@
 
 .snsIconContainer {
   margin-left: 4.6rem;
+
   @include sp {
     margin-left: 5.6rem;
   }

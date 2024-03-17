@@ -31,7 +31,7 @@
   width: 100%;
 }
 
-.contact__lead {
+.contact__lead > p {
   font-size: 1.6rem;
   line-height: 3.8rem;
 
@@ -53,8 +53,7 @@
 }
 
 .contactForm {
-  margin: 7rem auto 12rem;
-  //width: 64rem;
+  margin: 7.2rem auto 12rem;
 
   @include sp {
     margin: 5.6rem auto 5.6rem;
@@ -63,12 +62,12 @@
 }
 
 .contactTable {
-  margin-top: 9rem;
+  margin-top: 5.6rem;
   width: 100%;
 
-  @include sp {
-    margin-top: 1.5rem;
-  }
+  // @include sp {
+  //   margin-top: 3.2rem;
+  // }
 }
 
 .contactTable table{
@@ -104,7 +103,6 @@
 
 %formBase {
   border: #e2e2e2 1px solid;
-  // width: 64rem;
   width:100%;
   border-radius: 0.4rem;
   padding-left: 1rem;
@@ -116,6 +114,7 @@
 
 .contactTable label {
   margin-right: 2rem;
+  @include jp(700);
 
   @include sp {
     margin-right: 0;
@@ -128,9 +127,11 @@
 }
 
 .inputExplanation {
+  font-size: 1.2rem;
+
   @include sp {
     display: block;
-    margin-top: 1.6rem;
+    margin-top: 1.2rem;
   }
 }
 
@@ -142,6 +143,7 @@
 .contactTable textarea {
   @extend %formBase;
   height: 16rem;
+  padding: 1rem;
 }
 
 .contactTable .confirmCheckbox input {
@@ -179,7 +181,7 @@
   padding-bottom: 4.2rem;
 
   @include sp {
-    display: block;
+    // display: block;
   }
 }
 
@@ -208,6 +210,10 @@
 
 .textArea-confirm {
   line-height: 3rem;
+
+  @include sp {
+    display: block;
+  }
 }
 
 .contactTable-confirm th {

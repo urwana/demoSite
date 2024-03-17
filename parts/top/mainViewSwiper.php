@@ -6,7 +6,7 @@
   ];
   get_template_part('parts/top/swiperImg', null, array('topSlides' => $topSlides)); ?>
   <div class="mainViewwSwiper__copy">
-    <div class="catchcopy-vertical">気軽に話せる<br>ご近所の弁護士として</div>
+    <div class="catchcopy-vertical">気軽に話せる<br>&nbsp;&nbsp;ご近所の弁護士として</div>
   </div>
 </div>
 <div class="mainCopyContainer">

@@ -11,6 +11,6 @@ $args = array(
   'type' => 'monthly', // 月ごとのアーカイブを指定
   'limit' => 12, // 表示件数を指定
 );
-echo '<ul>';
+echo '<ul class="linkTabs">';
 echo wp_get_archives($args); // カスタマイズされたアーカイブリンクのHTMLを生成
 echo '</ul>';

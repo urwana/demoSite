@@ -15,19 +15,16 @@
   margin-left: 3rem;
   flex-grow: 1;
   //flex-shrink: 0;
-  padding-left: 2vw;
+  padding-left: 2.5%;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 
-  @include tb {
-    margin-left: 1.5rem;
-  }
-
   @include sp {
     margin-left: 0;
+    padding-left: 0;
     margin-top: 1.5rem;
   }
 }
@@ -37,7 +34,7 @@
   @include date;
 
   @include tb {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 }
 
@@ -62,24 +59,21 @@
 
 .list__title-work {
   display: inline-block;
-  margin-top: 3rem;
   font-size: 1.8rem;
   cursor: pointer;
-  line-height: 3.2rem;
-  width: 80%;
-  @include underlineAnimation(#000000, 1px, 0.3s);
+  max-width: 95%;
+  @include jp(700);
   @include ellipsisSingle;
+  @include underlineAnimation(#001e63, 4px, 0.3s);
+  margin-top: 2rem;
 
   @include tb {
     font-size: 1.4rem;
-    padding: 0;
     line-height: 2.8rem;
-    margin-top: 1rem;
   }
 
   @include sp {
-    // white-space: normal;
-    width:94.6%;
+    max-width: 88vw;
     margin-inline: auto;
   }
 }
@@ -91,7 +85,7 @@
   color: #626262;
   line-height: 2.375;
   @include ellipsisMulti(2, 8rem);
-  width: 80%;
+  width: 100%;
 
   @include tb {
     font-size: 1.4rem;
@@ -102,7 +96,7 @@
 
   @include sp {
     white-space: normal;
-    width:94.6%;
+    //width:94.6%;
     margin-inline: auto;
   }
 }

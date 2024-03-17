@@ -59,7 +59,7 @@ gsap.to(workSectionTitle, {
 gsap.to(workSectionBody, {
   autoAlpha: 1,
   y: "0%",
-  duration: 3,
+  duration: 2,
   scrollTrigger: {
     trigger: workSectionTitle,
     start: "center bottom",

@@ -2,8 +2,6 @@
   min-width: 14rem;
 
   @include sp {
-    padding: 0 2.5rem;
-    padding: 0 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }

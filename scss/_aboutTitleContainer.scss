@@ -1,5 +1,10 @@
 .aboutTitleContainer {
   color: #001e63;
+
+  @include mb {
+    width: 94.6%;
+    margin-inline: auto;
+  }
 }
 
 .aboutTitleContainer__titleEn {

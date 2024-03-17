@@ -29,12 +29,8 @@
     width: 100%;
     max-width: none;
     margin: 5rem 0 0 0;
-    // padding-bottom: 15rem;
     padding-bottom: 26rem;
     height: auto;
-    // display: flex;
-    // justify-content: flex-start;
-    // align-items:flex-end;
   }
 }
 
@@ -94,7 +90,7 @@
 }
 
 @mixin ellipsisSingle {
-  // white-space: nowrap;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -116,7 +112,6 @@
   display: inline-block;
 
   @include sp {
-    margin-left: 0.8rem;
     font-size: 1rem;
     padding: 0.5rem 1.6rem;
   }
