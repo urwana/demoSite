@@ -3,9 +3,12 @@ get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
 <main>
   <div class="wrapper">
     <?php
+    $categorie = $request_url_array = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
+    $request_target_string = end($request_url_array);
+    $displayCategory = 'お知らせ - ' . urldecode($request_target_string);
     $mainViewData = [
-      'pageNameEn' => "カテゴリー",
-      'pageNameJp' => "Category",
+      'pageNameEn' => $displayCategory,
+      'pageNameJp' => "News List",
       'pageNames' => ["news"]
     ];
     get_template_part('parts/common/mainView', null, array('mainViewData' => $mainViewData));
@@ -21,7 +24,7 @@ get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
               $index = 0;
               $photoNumber = $index + 1;
             ?>
-              <?php get_template_part('parts/common/newsLists'); ?>
+              <?php get_template_part('parts/common/newsLists', null, array('labelDark' => true)); ?>
               <?php $index++; ?>
             <?php endwhile; ?>
           </ul>

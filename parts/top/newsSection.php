@@ -18,7 +18,7 @@
     <?php if ($the_query->have_posts()) : ?>
       <ul class="news__items">
         <?php while ($the_query->have_posts()) : $the_query->the_post();
-          get_template_part('parts/common/newsLists');
+          get_template_part('parts/common/newsLists', null, array('labelDark' => false));
         endwhile; ?>
         <?php wp_reset_postdata(); ?>
       </ul>

@@ -3,9 +3,12 @@ get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
 <main>
   <div class="wrapper">
     <?php
+$taxonomy = $request_url_array = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
+$request_target_string = end($request_url_array);
+$displayTaxonomy = '事例 - ' . urldecode($request_target_string);
     $mainViewData = [
-      'pageNameEn' => "タクソノミー別一覧",
-      'pageNameJp' => "Taxonomy",
+      'pageNameEn' => $displayTaxonomy,
+      'pageNameJp' => "Case List",
       'pageNames' => ["works"]
     ];
     get_template_part('parts/common/mainView', null, array('mainViewData' => $mainViewData)); ?>

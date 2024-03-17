@@ -22,6 +22,10 @@
   margin-left: 2rem;
 }
 
+.label--dark{
+  @include label(#626262, #f3f3f3);
+}
+
 
 .list__text {
   margin-top: 2rem;
@@ -29,14 +33,22 @@
   font-size: 1.8rem;
   @include jp(700);
   cursor: pointer;
-  max-width: 60%;
+  max-width: 58vw;
   line-height: 3rem;
   @include ellipsisSingle;
   @include underlineAnimation(#001e63, 4px, 0.3s);
 
+  @include tb {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    max-width: 60vw;
+  }
+
+  @include mb {
+    max-width: 88vw;
+  }
+
   @include sp {
     font-size: 1.4rem;
-    padding-right: 1rem;
-    line-height: 2.8rem;
   }
 }

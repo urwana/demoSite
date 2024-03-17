@@ -26,7 +26,6 @@
   margin-bottom: 12rem;
   width: 76.39%;
 
-
   @include mb {
     width: 94.6%;
   }
@@ -37,10 +36,17 @@
   }
 }
 
+.worksLabels {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .worksDetail__label {
   @include label(#626262, #f3f3f3);
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  // margin-right: 1rem;
+  // margin-bottom: 1rem;
 }
 
 .worksDetail__title {

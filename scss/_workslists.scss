@@ -61,20 +61,20 @@
   display: inline-block;
   font-size: 1.8rem;
   cursor: pointer;
-  max-width: 95%;
+  max-width: 44vw;
   @include jp(700);
   @include ellipsisSingle;
   @include underlineAnimation(#001e63, 4px, 0.3s);
   margin-top: 2rem;
 
   @include tb {
-    font-size: 1.4rem;
     line-height: 2.8rem;
+    max-width: 65vw;
   }
 
   @include sp {
+    font-size: 1.4rem;
     max-width: 88vw;
-    margin-inline: auto;
   }
 }
 
@@ -85,29 +85,34 @@
   color: #626262;
   line-height: 2.375;
   @include ellipsisMulti(2, 8rem);
-  width: 100%;
+  width: 44vw;
 
   @include tb {
-    font-size: 1.4rem;
     padding: 0;
     line-height: 2;
     margin-top: 1rem;
+    width: 65vw;
+    height:7rem;
+  }
+
+  @include mb {
   }
 
   @include sp {
     white-space: normal;
-    //width:94.6%;
+    font-size: 1.4rem;
+    height:5rem;
+    width: 88vw;
     margin-inline: auto;
   }
 }
 
-.list-imgContainer-work{
+.list-imgContainer-work {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 20%;
 
-
-  img{
+  img {
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -116,9 +121,8 @@
   @include sp {
     width: 100%;
 
-    img{
-    width: 100%;
-
+    img {
+      width: 100%;
     }
   }
 }
@@ -132,10 +136,10 @@
   }
 }
 
-.label--works{
-  @include label( #707070, #f3f3f3);
+.label--works {
+  @include label(#707070, #f3f3f3);
 }
 
-.label--works:not(:first-child){
+.label--works:not(:first-child) {
   margin-left: 2rem;
 }

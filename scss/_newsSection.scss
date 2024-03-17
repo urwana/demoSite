@@ -4,7 +4,7 @@
   align-items: flex-start;
   margin-top: 5rem;
 
-  @include sp {
+  @include tb {
     flex-direction: column;
     margin-inline: auto;
     margin-top: 0;
@@ -14,7 +14,7 @@
 .newsSection__head {
   width: 18%;
 
-  @include sp {
+  @include tb {
     width: 100%;
   }
 }
@@ -27,9 +27,8 @@
 .newsSection__linkContainer {
   margin-top: 3.2rem;
 
-  @include sp {
+  @include mb {
     width: 94.6%;
-    margin-left: 3rem;
   }
 }
 
@@ -39,9 +38,9 @@
   border-left: #e2e2e2 solid 1px;
   flex: 1;
 
-  @include sp {
+  @include tb {
     width:100%;
-    margin-top: 3.2rem;
+    margin-top: 5.6rem;
     padding-left: 0;
     border-left: none;
   }

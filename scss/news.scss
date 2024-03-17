@@ -22,10 +22,6 @@
   margin-bottom: 12rem;
 
   @include tb {
-    justify-content: center;
-  }
-
-  @include mb {
     flex-direction: column;
     width: 100%;
   }
@@ -36,11 +32,10 @@
 }
 
 .newsMainContents__tabs {
-  width: 18%;
+  width: 20rem;
 
-  @include sp {
+  @include tb {
     width: 94.6%;
-    margin-left: 3rem;
   }
 }
 
@@ -50,10 +45,10 @@
   border-left: #e2e2e2 solid 1px;
   flex: 1;
 
-  @include sp {
+  @include tb {
     width: 94%;
     padding-left: 3%;
-    margin-top: 3.2rem;
+    margin-top: 5.6rem;
     border-left: transparent;
   }
 }

@@ -15,17 +15,17 @@ get_template_part('parts/common/header', null, array('base' => $baseNews)); ?>
       </div>
       <div class="newsMainContents__body">
         <?php if (have_posts()) : ?>
-        <ul class="news__lists">
-          <?php while (have_posts()) : the_post();
+          <ul class="news__lists">
+            <?php while (have_posts()) : the_post();
               $index = 0;
               $photoNumber = $index + 1;
             ?>
-          <?php get_template_part('parts/common/newsLists'); ?>
-          <?php $index++; ?>
-          <?php endwhile; ?>
-        </ul>
+              <?php get_template_part('parts/common/newsLists', null, array('labelDark' => true)); ?>
+              <?php $index++; ?>
+            <?php endwhile; ?>
+          </ul>
         <?php else : ?>
-        <p>記事が投稿されていません</p>
+          <p>記事が投稿されていません</p>
         <?php endif; ?>
         <?php get_template_part('parts/common/pager') ?>
       </div>

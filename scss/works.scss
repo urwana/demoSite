@@ -22,13 +22,9 @@
   margin-inline:auto;
 
   @include tb {
+    flex-direction: column;
     width: 94.6%;
-  }
-
-  @include sp {
-    display: block;
     margin: 5.6rem 0;
-    width: 94.6%;
     margin-inline:auto;
   }
 }
@@ -36,9 +32,8 @@
 .worksMainContents__tabs {
   width: 18%;
 
-  @include sp {
+  @include tb {
     width: 94.6%;
-    margin-left: 3rem;
   }
 }
 
@@ -48,9 +43,9 @@
   border-left: #e2e2e2 solid 1px;
   flex: 1;
 
-  @include sp {
+  @include tb {
     padding-left: 0;
-    margin-top: 3.2rem;
+    margin-top: 5.6rem;
     border-left: transparent;
   }
 }
