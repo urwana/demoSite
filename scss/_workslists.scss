@@ -11,10 +11,10 @@
   }
 }
 
-.list-textContainer-work {
+.list-textContainer-work,
+.list-textContainer-work--long {
   margin-left: 3rem;
   flex-grow: 1;
-  //flex-shrink: 0;
   padding-left: 2.5%;
 
   display: flex;
@@ -57,53 +57,97 @@
   }
 }
 
-.list__title-work {
+%list__title-work-common{
   display: inline-block;
   font-size: 1.8rem;
   cursor: pointer;
-  max-width: 44vw;
   @include jp(700);
   @include ellipsisSingle;
   @include underlineAnimation(#001e63, 4px, 0.3s);
   margin-top: 2rem;
 
   @include tb {
-    line-height: 2.8rem;
     max-width: 65vw;
   }
 
   @include sp {
-    font-size: 1.4rem;
     max-width: 88vw;
   }
 }
 
-.list-textContainer-work > p {
+.list__title-work {
+  @extend %list__title-work-common;
+  max-width: 44vw;
+
+  @include tb {
+    max-width: 65vw;
+  }
+
+  @include sp {
+    max-width: 88vw;
+  }
+}
+
+.list__title-work--long{
+  @extend %list__title-work-common;
+  max-width: 55vw;
+
+  @include tb {
+    max-width: 65vw;
+  }
+
+  @include sp {
+    max-width: 88vw;
+  }
+
+}
+
+%list-textContainer-work-p{
   margin-top: 3rem;
   font-size: 1.6rem;
   font-weight: normal;
   color: #626262;
   line-height: 2.375;
   @include ellipsisMulti(2, 8rem);
-  width: 44vw;
 
   @include tb {
     padding: 0;
     line-height: 2;
     margin-top: 1rem;
-    width: 65vw;
     height:7rem;
-  }
-
-  @include mb {
   }
 
   @include sp {
     white-space: normal;
     font-size: 1.4rem;
     height:5rem;
-    width: 88vw;
     margin-inline: auto;
+  }
+}
+
+.list-textContainer-work > p {
+  @extend %list-textContainer-work-p;
+  width: 44vw;
+
+  @include tb {
+    width: 65vw;
+  }
+
+  @include sp {
+    width: 88vw;
+  }
+}
+
+.list-textContainer-work--long > p {
+  @extend %list-textContainer-work-p;
+  width: 55vw;
+
+  @include tb {
+    width: 65vw;
+  }
+
+  @include sp {
+    width: 88vw;
   }
 }
 

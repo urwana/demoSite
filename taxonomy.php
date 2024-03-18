@@ -3,27 +3,27 @@ get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
 <main>
   <div class="wrapper">
     <?php
-$taxonomy = $request_url_array = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
-$request_target_string = end($request_url_array);
+    $taxonomy = $request_url_array = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
+    $request_target_string = end($request_url_array);
 
-$title = urldecode($request_target_string);
-$caseName = "";
+    $title = urldecode($request_target_string);
+    $caseName = "";
 
-function returnLawName($title)
-{
-  switch ($title) {
-    case "commercial-law":
-      return "商法";
-      break;
-    case "corporate-law":
-      return "会社法";
-      break;
-    case "labor-law":
-      return "労働法";
-      break;
-    case "civil-code":
-      return  "民法";
-      break;
+    function returnLawName($title)
+    {
+      switch ($title) {
+        case "commercial-law":
+          return "商法";
+          break;
+        case "corporate-law":
+          return "会社法";
+          break;
+        case "labor-law":
+          return "労働法";
+          break;
+        case "civil-code":
+          return  "民法";
+          break;
         case "international-laws":
           return "国際法";
           break;
@@ -47,7 +47,7 @@ function returnLawName($title)
 
 
 
-$displayTaxonomy = '事例 - ' . returnLawName(urldecode($request_target_string));
+    $displayTaxonomy = '事例 - ' . returnLawName(urldecode($request_target_string));
     $mainViewData = [
       'pageNameEn' => $displayTaxonomy,
       'pageNameJp' => "Case List",
@@ -79,7 +79,7 @@ $displayTaxonomy = '事例 - ' . returnLawName(urldecode($request_target_string)
               $index = 0;
               $photoNumber = $index + 1;
             ?>
-          <?php get_template_part('parts/works/worksLists', null, array('type' => 'taxonomy')); ?>
+          <?php get_template_part('parts/works/worksLists', null, ["long" => false]); ?>
           <?php $index++; ?>
           <?php endwhile; ?>
         </ul>

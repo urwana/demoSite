@@ -1,17 +1,18 @@
+<?php $long = $args['long']; ?>
 <li class="list-work">
   <a href="<?php the_permalink(); ?>">
     <div class="list-imgContainer-work">
       <?php if (has_post_thumbnail()) : ?>
-        <?php the_post_thumbnail('full', array('class' => 'works__img')); ?>
+      <?php the_post_thumbnail('full', array('class' => 'works__img')); ?>
       <?php else : ?>
-        <img class="news__img" src="<?php echo esc_url(get_theme_file_uri("/images/articleNone.jpg")); ?>" alt="NoImage画像" />
+      <img class="news__img" src="<?php echo esc_url(get_theme_file_uri("/images/articleNone.jpg")); ?>"
+        alt="NoImage画像" />
       <?php endif; ?>
     </div>
-    <div class="list-textContainer-work">
+    <div class="<?php echo $long ? 'list-textContainer-work--long' : 'list-textContainer-work' ?>">
       <div class="list__upperContents">
         <ul class="Labels--works">
           <?php
-          //if ($type == 'taxonomy') {
           $taxonomy_terms = get_the_terms(get_the_ID(), 'custom_taxonomy_work');
           if (!empty($taxonomy_terms)) {
             $limit = 5;
@@ -28,9 +29,10 @@
           ?>
         </ul>
       </div>
-      <div class="list__title-work"><?php the_title(); ?></div>
+      <div class="<?php echo $long ? 'list__title-work--long' : 'list__title-work' ?>"><?php the_title(); ?></div>
       <?php the_excerpt(); ?>
-      <time class="worksDate" datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
+      <time class="worksDate"
+        datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
     </div>
   </a>
 </li>
