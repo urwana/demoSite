@@ -7,7 +7,6 @@ get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
     $request_target_string = end($request_url_array);
 
     $title = urldecode($request_target_string);
-    $caseName = "";
 
     function returnLawName($title)
     {
@@ -44,8 +43,6 @@ get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
           break;
       }
     }
-
-
 
     $displayTaxonomy = '事例 - ' . returnLawName(urldecode($request_target_string));
     $mainViewData = [
