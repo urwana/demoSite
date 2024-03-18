@@ -8,14 +8,10 @@
 }
 
 .philosophySection__inner {
-  //width: 100%;
   width:76.39%;
   margin-inline:auto;
-  //max-width: 110rem;
   display: flex;
   justify-content: flex-start;
-  //margin-inline: auto;
-  //margin-left: 11.8%;
 
   @include tb {
     display: block;

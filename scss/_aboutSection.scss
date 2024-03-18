@@ -1,6 +1,5 @@
 .aboutSection {
   display: flex;
-  //justify-content: flex-start;
   margin-top: 6rem;
 
   @include sp {
@@ -9,10 +8,9 @@
 }
 
 .aboutSection__imgWrapper {
-  flex-grow: 0; /* 伸長の制限 */
-  flex-shrink: 0; /* 縮小の制限 */
-  flex-basis: 45%; /* 幅の初期値 */
-
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 45%;
   img {
     width: 100%;
     height: auto;
@@ -20,10 +18,10 @@
 }
 
 .aboutSection__textContainer {
-  flex-grow: 0; /* 伸長の制限 */
-  flex-shrink: 0; /* 縮小の制限 */
-  flex-basis: 55%; /* 幅の初期値 */
-  padding-left: 4vw; /* 画像とテキストの間隔を設定 */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 55%;
+  padding-left: 4vw;
 
   @include sp {
     margin: 3rem 0 0 0;

@@ -52,8 +52,6 @@
 }
 
 .cardService__no {
-  //font-family: "Oswald";
-  // color: #001e63;
   @include en(700);
   color: #e6cd92;
   font-size: 4rem;
@@ -132,8 +130,6 @@
 
   > span {
     font-size: 1.4rem;
-    // color: #626262;
-    // color:#E6CD92;
     color: #d00000;
 
     padding-left: 1.6rem;

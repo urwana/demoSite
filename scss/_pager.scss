@@ -14,7 +14,6 @@
   height: 18px;
 }
 
-// それぞれのページ番号のスタイル
 .page-numbers {
   @include jp(400);
   font-size: 1.4rem;
@@ -29,7 +28,6 @@
   color: #ffffff;
 }
 
-// ボーダーラインを打ち消す
 .page-numbers.dots,
 .page-numbers.prev,
 .page-numbers.next {

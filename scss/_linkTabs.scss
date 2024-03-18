@@ -3,15 +3,9 @@
 
   @include tb {
     width: 100%;
-    // display: grid;
-    // grid-template-columns: repeat(6, 1fr);
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-  }
-
-  @include sp {
-    //grid-template-columns: repeat(3, 1fr);
   }
 }
 
