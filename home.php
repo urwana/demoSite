@@ -1,4 +1,4 @@
-<?php $baseNews = ['path' => "./", 'title' => "お知らせ", 'css' => "news", 'description' => "架空のコーポレートデモサイトのお知らせ一覧ページです。"];
+<?php $baseNews = ['title' => "お知らせ", 'description' => "Aventador 法律事務所のお知らせ一覧ページです。"];
 get_template_part('parts/common/header', null, array('base' => $baseNews)); ?>
 <main>
   <div class="wrapper">

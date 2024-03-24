@@ -1,4 +1,4 @@
-<?php $base = ['path' => "./", 'title' => "トップ", 'css' => "top", 'description' => "架空のコーポレートデモサイトのトップページです。"]; ?>
+<?php $base = ['title' => "トップ", 'description' => "Aventador 法律事務所のトップページです。"]; ?>
 <?php get_template_part('parts/common/header', null, array('base' => $base)); ?>
 
 <main>

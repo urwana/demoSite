@@ -1,4 +1,4 @@
-<?php $base = ['path' => "./", 'title' => "ページが見つかりませんでした", 'css' => "page404", 'description' => ""]; ?>
+<?php $base = ['title' => "ページが見つかりませんでした", 'description' => "ページが見つかりませんでした"]; ?>
 <?php get_template_part('parts/common/header', null, array('base' => $base)); ?>
 
 <main>

@@ -1,4 +1,4 @@
-<?php $baseAbout = ['path' => "./", 'title' => "会社概要", 'css' => "about", 'description' => "架空のコーポレートデモサイトの会社概要ページです。"];
+<?php $baseAbout = ['title' => "私たち", 'description' => "Aventador 法律事務所のご紹介ページです。"];
 get_template_part('parts/common/header', null, array('base' => $baseAbout)); ?>
 <main>
   <div class="wrapper">

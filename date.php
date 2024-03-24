@@ -1,4 +1,4 @@
-<?php $baseWork = ['path' => "./", 'title' => "月別一覧", 'css' => "works", 'description' => "架空のコーポレートデモサイトの実績紹介ページです。"];
+<?php $baseWork = ['title' => "月別一覧", 'description' => "Aventador 法律事務所の月別一覧ページです。"];
 get_template_part('parts/common/header', null, array('base' => $baseWork)); ?>
 <main>
   <div class="wrapper">

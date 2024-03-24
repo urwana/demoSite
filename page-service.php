@@ -1,4 +1,4 @@
-<?php $baseService = ["path " => "./", "title" => "サービス", "css " => "service", "description" => "架空のコーポレートデモサイトのサービス紹介ページです。"];
+<?php $baseService = ["title" => "お仕事について", "description" => "Aventador 法律事務所のお仕事についての紹介ページです。"];
 get_template_part('parts/common/header', null, array('base' => $baseService)); ?>
 <main>
   <div class="wrapper">

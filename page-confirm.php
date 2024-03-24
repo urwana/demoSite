@@ -1,4 +1,4 @@
-<?php $base = ['path' => "./", 'title' => "お問い合わせ確認", 'css' => "contact", 'description' => "架空のコーポレートデモサイトのお問い合わせ確認ページです。"]; ?>
+<?php $base = ['title' => "お問い合わせ確認", 'description' => "Aventador 法律事務所のお問い合わせ確認ページです。"]; ?>
 <?php get_template_part('parts/common/header', null, array('base' => $base)); ?>
 
 <main>
