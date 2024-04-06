@@ -22,6 +22,6 @@
         <a href="<?php echo home_url('/'); ?>" class="button__404">TOPへ戻る</a>
       </div>
     </div>
-    <?php get_template_part('parts/common/footer') ?>
+    <?php get_template_part('parts/common/footerSimple'); ?>
   </div>
 </main>
