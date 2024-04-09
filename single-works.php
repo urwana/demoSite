@@ -25,7 +25,7 @@ get_template_part('parts/common/header', null, array('base' => $baseWorkDetail))
         <?php if (has_post_thumbnail()) : ?>
           <?php the_post_thumbnail('full', array('class' => 'detail__thumbnail')); ?>
         <?php else : ?>
-          <img class="detail__thumbnail" src="<?php echo esc_url(get_theme_file_uri("/images/articleNone.jpg")); ?>" alt="NoImage画像" />
+          <img class="detail__thumbnail" src="<?php echo esc_url(get_theme_file_uri("/images/articleNone.jpg")); ?>" width="100" height="100" alt="NoImage画像" />
         <?php endif; ?>
       </div>
 

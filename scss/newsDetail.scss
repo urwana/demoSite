@@ -34,7 +34,7 @@
     width: 94.6%;
   }
 
-  @media only screen and (max-width: 600px) {
+  @include mb {
     flex-direction: column;
     margin: 9rem auto 8rem;
   }
@@ -132,12 +132,18 @@
 
   @include sp {
     padding-bottom: 8rem;
+    width: 100%;
   }
 }
 
 .newsDetail__sideBar {
   width: 30rem;
   margin-left: 5.6vw;
+
+  @include mb {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .newsDetail__labels {
@@ -149,9 +155,6 @@
 
 .newsDetail__label {
   @include label(#626262, #f3f3f3);
-
-  @include sp {
-  }
 }
 
 .newsDetail__date {
@@ -172,16 +175,6 @@
     font-size: 1.4rem;
   }
 }
-
-// .newsDetail__imgContainer {
-//   margin-top: 4rem;
-//   text-align: center;
-
-//   img {
-//     width: 100%;
-//     height: auto;
-//   }
-// }
 
 .newsDetail__buttonContainer {
   margin-top: 7.5rem;
@@ -224,4 +217,8 @@
 
 .newsDetail__button:last-child:hover {
   background-position: 11rem center;
+}
+
+.newsDetail__main pre{
+  white-space: pre-wrap;
 }
