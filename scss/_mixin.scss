@@ -17,10 +17,11 @@
 }
 
 @mixin mainView {
-  height: 51.4rem;
+  //height: 40rem;
+  height: 35.7vw;
   position: relative;
-  margin: 15rem 0 0 11.8%;
-  padding-bottom: 35.7vw;
+  margin: 10rem 0 0 11.8%;
+  //padding-bottom: 35.7vw;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
